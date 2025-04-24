@@ -3,6 +3,7 @@
 ### Bootstrap a new project
 
 - Run `npx degit https://github.com/mulekick/typescript-setup.git my-awesome-typescript-project`.
+- Run `git clone git@github.com:mulekick/typescript-setup.git my-awesome-typescript-project` if the repo is private.
 
 ---
 
@@ -33,6 +34,6 @@
      - Forces being specific about importing as a type versus importing as a value.
    - [`"allowSyntheticDefaultImports": true`](https://www.typescriptlang.org/tsconfig/#allowSyntheticDefaultImports) :
      - Emulates a default export for modules that do not have one.
-     - Also, `import * as X from "Y"` should ne ver be used since it only imports **_own properties_** of exported values.
+     - Also, `import * as X from "Y"` should never be used since it only imports **_own properties_** of exported values.
    - [`"skipLibCheck": false`](https://www.typescriptlang.org/tsconfig/#skipLibCheck)
      - Ensures that types for the project are checked exhaustively at compilation.
