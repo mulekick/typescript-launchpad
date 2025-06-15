@@ -29,5 +29,7 @@
     "typeDeclarationFormat": "table",
     "sort": [
         "source-order"
-    ]
+    ],
+    // skip type checking
+    "skipErrorChecking": true
 }
