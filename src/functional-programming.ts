@@ -5,11 +5,6 @@
  * @categoryDescription 1. Function type expressions for higher order functions
  * @categoryDescription 2. Typed higher order functions implementations
  * @categoryDescription 3. Typed higher order functions usage
- * @remarks
- * - Write higher order functions that :
- *   1. Accept a function with a variadic number of parameters as an argument.
- *   2. The parameter function can be sync or async, return any type and its arguments can be of any type.
- *   3. The returned function returns a promise that resolves with the returned value of the parameter function.
  */
 
 // import primitives
@@ -29,7 +24,7 @@ export type WrapperFunction<T> = T extends TypedFunction<infer Z, infer X> ? (fn
 
 /**
  * Promisify sync function
- * @category Typed higher order functions implementations
+ * @category 2. Typed higher order functions implementations
  * @remarks
  * - This pattern allows for static typing of [hook-like functions](https://en.wikipedia.org/wiki/Hooking).
  * - The try / catch clause, promise resolution and rejection as well as parameter function call can be moved in any desired callback.
@@ -45,7 +40,7 @@ export const wrapSyncFn: WrapperFunction<(...args: [string])=> string> = fn => (
 
 /**
  * Promisify async function
- * @category Typed higher order functions implementations
+ * @category 2. Typed higher order functions implementations
  * @remarks
  * - Same as the above using an async function type + async / await.
  */
@@ -60,7 +55,7 @@ export const wrapAsyncFn: WrapperFunction<(...args: [number, number])=> Promise<
 
 /**
  * Usage: pass a sync function to a hook
- * @category Typed higher order functions usage
+ * @category 3. Typed higher order functions usage
  * @remarks
  * - Use code narrowing in the param function to match wrapper declared type
  */
@@ -72,7 +67,7 @@ export const promisedString: ReturnType<typeof wrapSyncFn> = wrapSyncFn(someName
 
 /**
  * Usage: pass an async function to a hook
- * @category Typed higher order functions usage
+ * @category 3. Typed higher order functions usage
  * @remarks
  * - Use code narrowing in the param function to match wrapper declared type
  */
@@ -86,7 +81,7 @@ export const promisedPromise: ReturnType<typeof wrapAsyncFn> = wrapAsyncFn((some
 
 /**
  * @hidden
- * @category Typed higher order functions usage
+ * @category 3. Typed higher order functions usage
  */
 void (async() => {
     try {

@@ -50,7 +50,6 @@ export class genericClass<T> implements genericInterface<T> {
 /**
  * Generic class usage
  * @category 2. Generic implementations
- * @class
  * @remarks
  * - Removing the type annotation on the constructor call makes the compiler infer the type from the argument, avoid.
  * - [Utility types](https://www.typescriptlang.org/docs/handbook/utility-types.html) are useful for annotating exports of generic-based classes instances.
@@ -60,7 +59,6 @@ export const e: InstanceType<typeof genericClass<string | null>> = new genericCl
 /**
  * @hidden
  * @category 2. Generic implementations
- * @class
  */
 export const f: InstanceType<typeof genericClass<number>> = new genericClass<number>(0);
 

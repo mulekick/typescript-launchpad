@@ -11,12 +11,11 @@
 
 /* eslint-disable n/no-missing-import, import/no-unresolved */
 
-// import primitives
-import console from "node:console";
-
 // import modules
 import {derivedClass, objectClass} from "./basic-types.ts";
 import {arrayAsTuple, createObject, processEventWithDate} from "./typed-functions.ts";
+import {sampleSpace} from "./namespaces.ts";
+import {ambient} from "ambient";
 
 // import types
 import type {extendedShape, objectShape} from "./basic-types.ts";
@@ -167,8 +166,7 @@ export class implementAbstractProp extends abstractImplementation {
  * @remarks
  * - Namespaces are the pre-ES6 typescript equivalent of modules.
  */
-import {sampleSpace} from "./namespaces.ts";
-console.log(`namespaced property: ${ sampleSpace.namespacedValue }`);
+export const fromNamespace: string = `namespaced property: ${ sampleSpace.namespacedValue }`;
 
 /**
  * Ambient imports
@@ -177,5 +175,4 @@ console.log(`namespaced property: ${ sampleSpace.namespacedValue }`);
  * - Provide external type declarations for ECMA-only code.
  * - `tsconfig` must map the module name to the implementation file.
  */
-import {ambient} from "ambient";
-console.log(`ambient module property: ${ ambient.one }`);
+export const fromAmbientModule: string = `ambient module property: ${ ambient.one }`;
