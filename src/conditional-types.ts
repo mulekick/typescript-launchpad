@@ -8,7 +8,7 @@
  */
 
 // import types
-import type {objectShape} from "./1 - basic types.ts";
+import type {objectShape} from "./basic-types.ts";
 
 /**
  * @hidden

@@ -15,11 +15,11 @@
 import console from "node:console";
 
 // import modules
-import {derivedClass, objectClass} from "./1 - basic types.ts";
-import {arrayAsTuple, createObject, processEventWithDate} from "./4 - typed functions.ts";
+import {derivedClass, objectClass} from "./basic-types.ts";
+import {arrayAsTuple, createObject, processEventWithDate} from "./typed-functions.ts";
 
 // import types
-import type {extendedShape, objectShape} from "./1 - basic types.ts";
+import type {extendedShape, objectShape} from "./basic-types.ts";
 
 /**
  * `typeof` operator usage
@@ -167,7 +167,7 @@ export class implementAbstractProp extends abstractImplementation {
  * @remarks
  * - Namespaces are the pre-ES6 typescript equivalent of modules.
  */
-import {sampleSpace} from "./9 - namespaces.ts";
+import {sampleSpace} from "./namespaces.ts";
 console.log(`namespaced property: ${ sampleSpace.namespacedValue }`);
 
 /**

@@ -10,11 +10,11 @@
 /* eslint-disable @typescript-eslint/no-shadow */
 
 // import modules
-import {events} from "./2 - composed types.ts";
+import {events} from "./composed-types.ts";
 
 // import types
-import type {extendedShape, objectShape} from "./1 - basic types.ts";
-import type {ecmaPrimitives, ecmaSpecialCases, event} from "./2 - composed types.ts";
+import type {extendedShape, objectShape} from "./basic-types.ts";
+import type {ecmaPrimitives, ecmaSpecialCases, event} from "./composed-types.ts";
 
 /**
  * `typeof` and `instanceof` based narrowing

@@ -11,11 +11,11 @@
 /* eslint-disable new-cap, @typescript-eslint/no-invalid-this */
 
 // import modules
-import {derivedClass, objectClass} from "./1 - basic types.ts";
-import {createObject} from "./4 - typed functions.ts";
+import {derivedClass, objectClass} from "./basic-types.ts";
+import {createObject} from "./typed-functions.ts";
 
 // import types
-import type {extendedShape, objectShape} from "./1 - basic types.ts";
+import type {extendedShape, objectShape} from "./basic-types.ts";
 
 /**
  * Generic interface

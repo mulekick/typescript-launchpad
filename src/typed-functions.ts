@@ -13,13 +13,13 @@
 /* eslint-disable @typescript-eslint/no-shadow, @typescript-eslint/no-unused-vars */
 
 // import modules
-import {objectClass, derivedClass, original, literal} from "./1 - basic types.ts";
-import {events} from "./2 - composed types.ts";
-import {runPredicate} from "./3 - code narrowing.ts";
+import {objectClass, derivedClass, original, literal} from "./basic-types.ts";
+import {events} from "./composed-types.ts";
+import {runPredicate} from "./code-narrowing.ts";
 
 // import types
-import type {extendedShape, objectShape} from "./1 - basic types.ts";
-import type {event} from "./2 - composed types.ts";
+import type {extendedShape, objectShape} from "./basic-types.ts";
+import type {event} from "./composed-types.ts";
 
 /**
  * Typed function declaration

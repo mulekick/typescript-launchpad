@@ -6,7 +6,7 @@
  */
 
 // eslint-disable-next-line spaced-comment
-/// <reference types="./10 - declaration.d.ts" />
+/// <reference types="./declaration.d.ts" />
 
 /**
  * Access interface.
