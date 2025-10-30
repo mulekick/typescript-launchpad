@@ -1,4 +1,6 @@
 # exclude node modules
 node_modules
-# exclude auto-generated docs
+# exclude build
+build
+# exclude docs
 docs
