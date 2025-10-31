@@ -14,4 +14,4 @@
 const ambient: ambientShape;
 ```
 
-Defined in: [src/ambient.d.ts:26](https://github.com/mulekick/typescript-launchpad/blob/a457d10acc4b923621b76033da1dd80588f8237a/src/ambient.d.ts#L26)
+Defined in: [src/ambient.d.ts:26](https://github.com/mulekick/typescript-launchpad/blob/d8ac85f697195820831ce6b398ef2aea71cddc66/src/ambient.d.ts#L26)

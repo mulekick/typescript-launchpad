@@ -16,7 +16,7 @@ Functional programming.
 type TypedFunction<R, T> = (...args) => T;
 ```
 
-Defined in: [src/functional-programming.ts:17](https://github.com/mulekick/typescript-launchpad/blob/a457d10acc4b923621b76033da1dd80588f8237a/src/functional-programming.ts#L17)
+Defined in: [src/functional-programming.ts:17](https://github.com/mulekick/typescript-launchpad/blob/d8ac85f697195820831ce6b398ef2aea71cddc66/src/functional-programming.ts#L17)
 
 Generic function type
 
@@ -45,7 +45,7 @@ Generic function type
 type WrapperFunction<T> = T extends TypedFunction<infer Z, infer X> ? (fn) => (...args) => Promise<Awaited<X>> : never;
 ```
 
-Defined in: [src/functional-programming.ts:23](https://github.com/mulekick/typescript-launchpad/blob/a457d10acc4b923621b76033da1dd80588f8237a/src/functional-programming.ts#L23)
+Defined in: [src/functional-programming.ts:23](https://github.com/mulekick/typescript-launchpad/blob/d8ac85f697195820831ce6b398ef2aea71cddc66/src/functional-programming.ts#L23)
 
 Generic higher-order function type
 
@@ -63,7 +63,7 @@ Generic higher-order function type
 const wrapSyncFn: WrapperFunction<(...args) => string>;
 ```
 
-Defined in: [src/functional-programming.ts:32](https://github.com/mulekick/typescript-launchpad/blob/a457d10acc4b923621b76033da1dd80588f8237a/src/functional-programming.ts#L32)
+Defined in: [src/functional-programming.ts:32](https://github.com/mulekick/typescript-launchpad/blob/d8ac85f697195820831ce6b398ef2aea71cddc66/src/functional-programming.ts#L32)
 
 Promisify sync function
 
@@ -80,7 +80,7 @@ Promisify sync function
 const wrapAsyncFn: WrapperFunction<(...args) => Promise<number>>;
 ```
 
-Defined in: [src/functional-programming.ts:47](https://github.com/mulekick/typescript-launchpad/blob/a457d10acc4b923621b76033da1dd80588f8237a/src/functional-programming.ts#L47)
+Defined in: [src/functional-programming.ts:47](https://github.com/mulekick/typescript-launchpad/blob/d8ac85f697195820831ce6b398ef2aea71cddc66/src/functional-programming.ts#L47)
 
 Promisify async function
 
@@ -96,7 +96,7 @@ Promisify async function
 const promisedString: ReturnType<typeof wrapSyncFn>;
 ```
 
-Defined in: [src/functional-programming.ts:62](https://github.com/mulekick/typescript-launchpad/blob/a457d10acc4b923621b76033da1dd80588f8237a/src/functional-programming.ts#L62)
+Defined in: [src/functional-programming.ts:62](https://github.com/mulekick/typescript-launchpad/blob/d8ac85f697195820831ce6b398ef2aea71cddc66/src/functional-programming.ts#L62)
 
 Usage: pass a sync function to a hook
 
@@ -112,7 +112,7 @@ Usage: pass a sync function to a hook
 const promisedPromise: ReturnType<typeof wrapAsyncFn>;
 ```
 
-Defined in: [src/functional-programming.ts:74](https://github.com/mulekick/typescript-launchpad/blob/a457d10acc4b923621b76033da1dd80588f8237a/src/functional-programming.ts#L74)
+Defined in: [src/functional-programming.ts:74](https://github.com/mulekick/typescript-launchpad/blob/d8ac85f697195820831ce6b398ef2aea71cddc66/src/functional-programming.ts#L74)
 
 Usage: pass an async function to a hook
 

@@ -12,7 +12,7 @@ Generic types.
 
 ### genericInterface
 
-Defined in: [src/generic-types.ts:28](https://github.com/mulekick/typescript-launchpad/blob/a457d10acc4b923621b76033da1dd80588f8237a/src/generic-types.ts#L28)
+Defined in: [src/generic-types.ts:28](https://github.com/mulekick/typescript-launchpad/blob/d8ac85f697195820831ce6b398ef2aea71cddc66/src/generic-types.ts#L28)
 
 Generic interface
 
@@ -35,7 +35,7 @@ Generic interface
 setOne(one): void;
 ```
 
-Defined in: [src/generic-types.ts:29](https://github.com/mulekick/typescript-launchpad/blob/a457d10acc4b923621b76033da1dd80588f8237a/src/generic-types.ts#L29)
+Defined in: [src/generic-types.ts:29](https://github.com/mulekick/typescript-launchpad/blob/d8ac85f697195820831ce6b398ef2aea71cddc66/src/generic-types.ts#L29)
 
 ###### Parameters
 
@@ -53,7 +53,7 @@ Defined in: [src/generic-types.ts:29](https://github.com/mulekick/typescript-lau
 getOne(): T;
 ```
 
-Defined in: [src/generic-types.ts:30](https://github.com/mulekick/typescript-launchpad/blob/a457d10acc4b923621b76033da1dd80588f8237a/src/generic-types.ts#L30)
+Defined in: [src/generic-types.ts:30](https://github.com/mulekick/typescript-launchpad/blob/d8ac85f697195820831ce6b398ef2aea71cddc66/src/generic-types.ts#L30)
 
 ###### Returns
 
@@ -63,7 +63,7 @@ Defined in: [src/generic-types.ts:30](https://github.com/mulekick/typescript-lau
 
 ### genericClass
 
-Defined in: [src/generic-types.ts:42](https://github.com/mulekick/typescript-launchpad/blob/a457d10acc4b923621b76033da1dd80588f8237a/src/generic-types.ts#L42)
+Defined in: [src/generic-types.ts:42](https://github.com/mulekick/typescript-launchpad/blob/d8ac85f697195820831ce6b398ef2aea71cddc66/src/generic-types.ts#L42)
 
 Generic class
 
@@ -91,7 +91,7 @@ Generic class
 new genericClass<T>(one): genericClass<T>;
 ```
 
-Defined in: [src/generic-types.ts:44](https://github.com/mulekick/typescript-launchpad/blob/a457d10acc4b923621b76033da1dd80588f8237a/src/generic-types.ts#L44)
+Defined in: [src/generic-types.ts:44](https://github.com/mulekick/typescript-launchpad/blob/d8ac85f697195820831ce6b398ef2aea71cddc66/src/generic-types.ts#L44)
 
 ###### Parameters
 
@@ -111,7 +111,7 @@ Defined in: [src/generic-types.ts:44](https://github.com/mulekick/typescript-lau
 setOne(one): void;
 ```
 
-Defined in: [src/generic-types.ts:45](https://github.com/mulekick/typescript-launchpad/blob/a457d10acc4b923621b76033da1dd80588f8237a/src/generic-types.ts#L45)
+Defined in: [src/generic-types.ts:45](https://github.com/mulekick/typescript-launchpad/blob/d8ac85f697195820831ce6b398ef2aea71cddc66/src/generic-types.ts#L45)
 
 ###### Parameters
 
@@ -133,7 +133,7 @@ Defined in: [src/generic-types.ts:45](https://github.com/mulekick/typescript-lau
 getOne(): T;
 ```
 
-Defined in: [src/generic-types.ts:46](https://github.com/mulekick/typescript-launchpad/blob/a457d10acc4b923621b76033da1dd80588f8237a/src/generic-types.ts#L46)
+Defined in: [src/generic-types.ts:46](https://github.com/mulekick/typescript-launchpad/blob/d8ac85f697195820831ce6b398ef2aea71cddc66/src/generic-types.ts#L46)
 
 ###### Returns
 
@@ -151,7 +151,7 @@ Defined in: [src/generic-types.ts:46](https://github.com/mulekick/typescript-lau
 const e: InstanceType<typeof genericClass>;
 ```
 
-Defined in: [src/generic-types.ts:56](https://github.com/mulekick/typescript-launchpad/blob/a457d10acc4b923621b76033da1dd80588f8237a/src/generic-types.ts#L56)
+Defined in: [src/generic-types.ts:56](https://github.com/mulekick/typescript-launchpad/blob/d8ac85f697195820831ce6b398ef2aea71cddc66/src/generic-types.ts#L56)
 
 Generic class usage
 
@@ -168,7 +168,7 @@ Generic class usage
 type genericFn<T, U> = (a, b) => [U, T];
 ```
 
-Defined in: [src/generic-types.ts:77](https://github.com/mulekick/typescript-launchpad/blob/a457d10acc4b923621b76033da1dd80588f8237a/src/generic-types.ts#L77)
+Defined in: [src/generic-types.ts:77](https://github.com/mulekick/typescript-launchpad/blob/d8ac85f697195820831ce6b398ef2aea71cddc66/src/generic-types.ts#L77)
 
 Generic function type expression
 
@@ -209,7 +209,7 @@ Generic function type expression
 const generic: genericFn<string, number>;
 ```
 
-Defined in: [src/generic-types.ts:87](https://github.com/mulekick/typescript-launchpad/blob/a457d10acc4b923621b76033da1dd80588f8237a/src/generic-types.ts#L87)
+Defined in: [src/generic-types.ts:87](https://github.com/mulekick/typescript-launchpad/blob/d8ac85f697195820831ce6b398ef2aea71cddc66/src/generic-types.ts#L87)
 
 Function implementation using a generic
 
@@ -227,7 +227,7 @@ Function implementation using a generic
 type constrainedFn<T> = (o) => string;
 ```
 
-Defined in: [src/generic-types.ts:116](https://github.com/mulekick/typescript-launchpad/blob/a457d10acc4b923621b76033da1dd80588f8237a/src/generic-types.ts#L116)
+Defined in: [src/generic-types.ts:116](https://github.com/mulekick/typescript-launchpad/blob/d8ac85f697195820831ce6b398ef2aea71cddc66/src/generic-types.ts#L116)
 
 Constrained generic types
 
@@ -261,7 +261,7 @@ const constrained: constrainedFn<
 | extendedShape>;
 ```
 
-Defined in: [src/generic-types.ts:125](https://github.com/mulekick/typescript-launchpad/blob/a457d10acc4b923621b76033da1dd80588f8237a/src/generic-types.ts#L125)
+Defined in: [src/generic-types.ts:125](https://github.com/mulekick/typescript-launchpad/blob/d8ac85f697195820831ce6b398ef2aea71cddc66/src/generic-types.ts#L125)
 
 Constrained function implementation and typing.
 
@@ -274,7 +274,7 @@ Constrained function implementation and typing.
 
 ### constrainedGenericClass
 
-Defined in: [src/generic-types.ts:144](https://github.com/mulekick/typescript-launchpad/blob/a457d10acc4b923621b76033da1dd80588f8237a/src/generic-types.ts#L144)
+Defined in: [src/generic-types.ts:144](https://github.com/mulekick/typescript-launchpad/blob/d8ac85f697195820831ce6b398ef2aea71cddc66/src/generic-types.ts#L144)
 
 Constrained generic class.
 
@@ -299,7 +299,7 @@ Constrained generic class.
 new constrainedGenericClass<T>(z): constrainedGenericClass<T>;
 ```
 
-Defined in: [src/generic-types.ts:147](https://github.com/mulekick/typescript-launchpad/blob/a457d10acc4b923621b76033da1dd80588f8237a/src/generic-types.ts#L147)
+Defined in: [src/generic-types.ts:147](https://github.com/mulekick/typescript-launchpad/blob/d8ac85f697195820831ce6b398ef2aea71cddc66/src/generic-types.ts#L147)
 
 ###### Parameters
 
@@ -315,8 +315,8 @@ Defined in: [src/generic-types.ts:147](https://github.com/mulekick/typescript-la
 
 | Property | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="six"></a> `six` | `T` | [src/generic-types.ts:145](https://github.com/mulekick/typescript-launchpad/blob/a457d10acc4b923621b76033da1dd80588f8237a/src/generic-types.ts#L145) |
-| <a id="seven"></a> `seven` | `T`\[`"three"`\] | [src/generic-types.ts:146](https://github.com/mulekick/typescript-launchpad/blob/a457d10acc4b923621b76033da1dd80588f8237a/src/generic-types.ts#L146) |
+| <a id="six"></a> `six` | `T` | [src/generic-types.ts:145](https://github.com/mulekick/typescript-launchpad/blob/d8ac85f697195820831ce6b398ef2aea71cddc66/src/generic-types.ts#L145) |
+| <a id="seven"></a> `seven` | `T`\[`"three"`\] | [src/generic-types.ts:146](https://github.com/mulekick/typescript-launchpad/blob/d8ac85f697195820831ce6b398ef2aea71cddc66/src/generic-types.ts#L146) |
 
 #### Methods
 
@@ -326,7 +326,7 @@ Defined in: [src/generic-types.ts:147](https://github.com/mulekick/typescript-la
 eight(): number;
 ```
 
-Defined in: [src/generic-types.ts:152](https://github.com/mulekick/typescript-launchpad/blob/a457d10acc4b923621b76033da1dd80588f8237a/src/generic-types.ts#L152)
+Defined in: [src/generic-types.ts:152](https://github.com/mulekick/typescript-launchpad/blob/d8ac85f697195820831ce6b398ef2aea71cddc66/src/generic-types.ts#L152)
 
 ###### Returns
 
@@ -340,7 +340,7 @@ Defined in: [src/generic-types.ts:152](https://github.com/mulekick/typescript-la
 type callableProps = "three" | "four";
 ```
 
-Defined in: [src/generic-types.ts:163](https://github.com/mulekick/typescript-launchpad/blob/a457d10acc4b923621b76033da1dd80588f8237a/src/generic-types.ts#L163)
+Defined in: [src/generic-types.ts:163](https://github.com/mulekick/typescript-launchpad/blob/d8ac85f697195820831ce6b398ef2aea71cddc66/src/generic-types.ts#L163)
 
 Union of callable object properties.
 
@@ -356,7 +356,7 @@ Union of callable object properties.
 type makeCallable<T, R> = (this, ...s) => ReturnType<T[R]>;
 ```
 
-Defined in: [src/generic-types.ts:171](https://github.com/mulekick/typescript-launchpad/blob/a457d10acc4b923621b76033da1dd80588f8237a/src/generic-types.ts#L171)
+Defined in: [src/generic-types.ts:171](https://github.com/mulekick/typescript-launchpad/blob/d8ac85f697195820831ce6b398ef2aea71cddc66/src/generic-types.ts#L171)
 
 Generic callable object type.
 
@@ -390,7 +390,7 @@ Generic callable object type.
 type callableLiteral = objectShape & makeCallable<objectShape, "three">;
 ```
 
-Defined in: [src/generic-types.ts:181](https://github.com/mulekick/typescript-launchpad/blob/a457d10acc4b923621b76033da1dd80588f8237a/src/generic-types.ts#L181)
+Defined in: [src/generic-types.ts:181](https://github.com/mulekick/typescript-launchpad/blob/d8ac85f697195820831ce6b398ef2aea71cddc66/src/generic-types.ts#L181)
 
 Type an existing object shape as callable.
 
@@ -406,7 +406,7 @@ Type an existing object shape as callable.
 const callThisLiteral: callableLiteral;
 ```
 
-Defined in: [src/generic-types.ts:189](https://github.com/mulekick/typescript-launchpad/blob/a457d10acc4b923621b76033da1dd80588f8237a/src/generic-types.ts#L189)
+Defined in: [src/generic-types.ts:189](https://github.com/mulekick/typescript-launchpad/blob/d8ac85f697195820831ce6b398ef2aea71cddc66/src/generic-types.ts#L189)
 
 Implement a typed callable object literal.
 
