@@ -7,7 +7,8 @@ export default {
             isTSX: false,
             allExtensions: true,
             disallowAmbiguousJSXLike: true,
-            onlyRemoveTypeImports: true
+            onlyRemoveTypeImports: true,
+            rewriteImportExtensions: true
         } ],
         [ `@babel/preset-env`, {
             useBuiltIns: `usage`,

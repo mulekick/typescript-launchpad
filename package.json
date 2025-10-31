@@ -8,7 +8,6 @@
         "list": "npx tsc --project tsconfig.json --listFilesOnly | sort",
         "typecheck": "npx tsc --noEmit --emitDeclarationOnly false && echo \"type checking was successful\"",
         "lint": "npx eslint .",
-        "dev": "npx tsx \"src/functional-programming.ts\"",
         "types:build": "npx tsc --noEmit false --emitDeclarationOnly true --noEmitOnError false",        
         "build": "npx babel src --extensions \".ts\" --out-dir \"build\" --ignore \"src/compiler-checks.ts\",\"**/*.d.ts\" --verbose",
         "docs:build": "npx typedoc"
@@ -42,5 +41,5 @@
     "license": "MIT",
     "repository": {},
     "bugs": {},
-    "homepage": "https://github.com/mulekick/typescript-setup"
+    "homepage": "https://github.com/mulekick/typescript-launchpad"
 }

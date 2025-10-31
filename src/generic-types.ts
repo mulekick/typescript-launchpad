@@ -37,8 +37,7 @@ export interface genericInterface<T> {
  * @remarks
  * - Can be made more adaptable if T is an object shape instead of a primitive type.
  * - Use indexed types to access object shape inner types and type private properties.
- * - Classes expressions are [a pain]() when made generic because of tsconfig's `isolatedDeclarations`.
- * - Some more advanced patterns have to be considered (see the observer implementation in design patterns for example).
+ * - Class expressions are a pain when made generic because of tsconfig's `isolatedDeclarations`, avoid.
  */
 export class genericClass<T> implements genericInterface<T> {
     private one: T;
