@@ -2,6 +2,13 @@
 
 Ready to use typescript environment.
 
+## Table of contents
+
+1. [Available commands](#available-commands)
+2. [Explore code samples](#explore-code-samples)
+3. [Typescript configuration details](#typescript-configuration-details)
+4. [Footnotes](#footnotes)
+
 ## Available commands
 
 ```bash
@@ -98,3 +105,4 @@ The following `compilerOptions` keys need special attention :
 - As opposed to ECMA, typescript maintainers sometimes have a tendency to [overengineer things](https://www.typescriptlang.org/docs/handbook/2/classes.html#parameter-properties).
 - Another striking example of that tendency can be found [here](https://www.typescriptlang.org/docs/handbook/namespaces.html#aliases).
 - The remedy to that is to stick to useful features and use tried and tested coding patterns.
+- Pro tip : when types created from a generic type serve almost identical implementations, **_the generic type probably shouldn't exist_**.
