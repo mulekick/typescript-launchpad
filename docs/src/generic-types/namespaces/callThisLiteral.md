@@ -20,7 +20,7 @@ Implement a typed callable object literal.
 one: string;
 ```
 
-Defined in: [src/generic-types.ts:190](https://github.com/mulekick/typescript-launchpad/blob/d8ac85f697195820831ce6b398ef2aea71cddc66/src/generic-types.ts#L190)
+Defined in: [src/generic-types.ts:190](https://github.com/mulekick/typescript-launchpad/blob/f4a9cdb57480ce14a27a779a7e385a4a8e8e85ea/src/generic-types.ts#L190)
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: [src/generic-types.ts:190](https://github.com/mulekick/typescript-la
 two: number | undefined;
 ```
 
-Defined in: [src/generic-types.ts:191](https://github.com/mulekick/typescript-launchpad/blob/d8ac85f697195820831ce6b398ef2aea71cddc66/src/generic-types.ts#L191)
+Defined in: [src/generic-types.ts:191](https://github.com/mulekick/typescript-launchpad/blob/f4a9cdb57480ce14a27a779a7e385a4a8e8e85ea/src/generic-types.ts#L191)
 
 ## Functions
 
@@ -40,7 +40,7 @@ Defined in: [src/generic-types.ts:191](https://github.com/mulekick/typescript-la
 function three(s): number;
 ```
 
-Defined in: [src/generic-types.ts:192](https://github.com/mulekick/typescript-launchpad/blob/d8ac85f697195820831ce6b398ef2aea71cddc66/src/generic-types.ts#L192)
+Defined in: [src/generic-types.ts:192](https://github.com/mulekick/typescript-launchpad/blob/f4a9cdb57480ce14a27a779a7e385a4a8e8e85ea/src/generic-types.ts#L192)
 
 #### Parameters
 
@@ -60,7 +60,7 @@ Defined in: [src/generic-types.ts:192](https://github.com/mulekick/typescript-la
 function four(s): string;
 ```
 
-Defined in: [src/generic-types.ts:193](https://github.com/mulekick/typescript-launchpad/blob/d8ac85f697195820831ce6b398ef2aea71cddc66/src/generic-types.ts#L193)
+Defined in: [src/generic-types.ts:193](https://github.com/mulekick/typescript-launchpad/blob/f4a9cdb57480ce14a27a779a7e385a4a8e8e85ea/src/generic-types.ts#L193)
 
 #### Parameters
 

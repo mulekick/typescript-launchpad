@@ -16,7 +16,7 @@ Functional programming.
 type TypedFunction<R, T> = (...args) => T;
 ```
 
-Defined in: [src/functional-programming.ts:17](https://github.com/mulekick/typescript-launchpad/blob/d8ac85f697195820831ce6b398ef2aea71cddc66/src/functional-programming.ts#L17)
+Defined in: [src/functional-programming.ts:20](https://github.com/mulekick/typescript-launchpad/blob/f4a9cdb57480ce14a27a779a7e385a4a8e8e85ea/src/functional-programming.ts#L20)
 
 Generic function type
 
@@ -39,13 +39,34 @@ Generic function type
 
 ***
 
-### WrapperFunction
+### PromisifyFunction
 
 ```ts
-type WrapperFunction<T> = T extends TypedFunction<infer Z, infer X> ? (fn) => (...args) => Promise<Awaited<X>> : never;
+type PromisifyFunction<T> = T extends TypedFunction<infer Z, infer X> ? (fn) => (...args) => Promise<Awaited<X>> : never;
 ```
 
-Defined in: [src/functional-programming.ts:23](https://github.com/mulekick/typescript-launchpad/blob/d8ac85f697195820831ce6b398ef2aea71cddc66/src/functional-programming.ts#L23)
+Defined in: [src/functional-programming.ts:26](https://github.com/mulekick/typescript-launchpad/blob/f4a9cdb57480ce14a27a779a7e385a4a8e8e85ea/src/functional-programming.ts#L26)
+
+Generic higher-order function type
+
+#### Type Parameters
+
+| Type Parameter |
+| ------ |
+| `T` |
+
+***
+
+### TimeExecution
+
+```ts
+type TimeExecution<T> = T extends TypedFunction<infer Z, infer X> ? (fn) => (...args) => {
+  duration: number;
+  result: X;
+} : never;
+```
+
+Defined in: [src/functional-programming.ts:32](https://github.com/mulekick/typescript-launchpad/blob/f4a9cdb57480ce14a27a779a7e385a4a8e8e85ea/src/functional-programming.ts#L32)
 
 Generic higher-order function type
 
@@ -57,13 +78,13 @@ Generic higher-order function type
 
 ## 2. Typed higher order functions implementations
 
-### wrapSyncFn
+### promisifySyncFn
 
 ```ts
-const wrapSyncFn: WrapperFunction<(...args) => string>;
+const promisifySyncFn: PromisifyFunction<(...args) => string>;
 ```
 
-Defined in: [src/functional-programming.ts:32](https://github.com/mulekick/typescript-launchpad/blob/d8ac85f697195820831ce6b398ef2aea71cddc66/src/functional-programming.ts#L32)
+Defined in: [src/functional-programming.ts:41](https://github.com/mulekick/typescript-launchpad/blob/f4a9cdb57480ce14a27a779a7e385a4a8e8e85ea/src/functional-programming.ts#L41)
 
 Promisify sync function
 
@@ -74,13 +95,13 @@ Promisify sync function
 
 ***
 
-### wrapAsyncFn
+### promisifyAsyncFn
 
 ```ts
-const wrapAsyncFn: WrapperFunction<(...args) => Promise<number>>;
+const promisifyAsyncFn: PromisifyFunction<(...args) => Promise<number>>;
 ```
 
-Defined in: [src/functional-programming.ts:47](https://github.com/mulekick/typescript-launchpad/blob/d8ac85f697195820831ce6b398ef2aea71cddc66/src/functional-programming.ts#L47)
+Defined in: [src/functional-programming.ts:56](https://github.com/mulekick/typescript-launchpad/blob/f4a9cdb57480ce14a27a779a7e385a4a8e8e85ea/src/functional-programming.ts#L56)
 
 Promisify async function
 
@@ -88,15 +109,32 @@ Promisify async function
 
 - Same as the above using an async function type + async / await.
 
+***
+
+### timeExecutionHook
+
+```ts
+const timeExecutionHook: TimeExecution<(...args) => number>;
+```
+
+Defined in: [src/functional-programming.ts:72](https://github.com/mulekick/typescript-launchpad/blob/f4a9cdb57480ce14a27a779a7e385a4a8e8e85ea/src/functional-programming.ts#L72)
+
+Time function execution
+
+#### Remarks
+
+- Hook-like higher order function that accepts a function as a parameter
+- It returns the return type of the function along with the execution duration
+
 ## 3. Typed higher order functions usage
 
 ### promisedString
 
 ```ts
-const promisedString: ReturnType<typeof wrapSyncFn>;
+const promisedString: ReturnType<typeof promisifySyncFn>;
 ```
 
-Defined in: [src/functional-programming.ts:62](https://github.com/mulekick/typescript-launchpad/blob/d8ac85f697195820831ce6b398ef2aea71cddc66/src/functional-programming.ts#L62)
+Defined in: [src/functional-programming.ts:85](https://github.com/mulekick/typescript-launchpad/blob/f4a9cdb57480ce14a27a779a7e385a4a8e8e85ea/src/functional-programming.ts#L85)
 
 Usage: pass a sync function to a hook
 
@@ -109,10 +147,26 @@ Usage: pass a sync function to a hook
 ### promisedPromise
 
 ```ts
-const promisedPromise: ReturnType<typeof wrapAsyncFn>;
+const promisedPromise: ReturnType<typeof promisifyAsyncFn>;
 ```
 
-Defined in: [src/functional-programming.ts:74](https://github.com/mulekick/typescript-launchpad/blob/d8ac85f697195820831ce6b398ef2aea71cddc66/src/functional-programming.ts#L74)
+Defined in: [src/functional-programming.ts:97](https://github.com/mulekick/typescript-launchpad/blob/f4a9cdb57480ce14a27a779a7e385a4a8e8e85ea/src/functional-programming.ts#L97)
+
+Usage: pass an async function to a hook
+
+#### Remarks
+
+- Use code narrowing in the param function to match wrapper declared type
+
+***
+
+### timedCountAllChars
+
+```ts
+const timedCountAllChars: ReturnType<typeof timeExecutionHook>;
+```
+
+Defined in: [src/functional-programming.ts:111](https://github.com/mulekick/typescript-launchpad/blob/f4a9cdb57480ce14a27a779a7e385a4a8e8e85ea/src/functional-programming.ts#L111)
 
 Usage: pass an async function to a hook
 

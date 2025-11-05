@@ -16,7 +16,7 @@ Advanced features.
 type typedOverloads = typeof processEventWithDate;
 ```
 
-Defined in: [src/advanced-features.ts:29](https://github.com/mulekick/typescript-launchpad/blob/d8ac85f697195820831ce6b398ef2aea71cddc66/src/advanced-features.ts#L29)
+Defined in: [src/advanced-features.ts:29](https://github.com/mulekick/typescript-launchpad/blob/f4a9cdb57480ce14a27a779a7e385a4a8e8e85ea/src/advanced-features.ts#L29)
 
 `typeof` operator usage
 
@@ -39,7 +39,7 @@ type unionOfKeys = keyof {
 };
 ```
 
-Defined in: [src/advanced-features.ts:38](https://github.com/mulekick/typescript-launchpad/blob/d8ac85f697195820831ce6b398ef2aea71cddc66/src/advanced-features.ts#L38)
+Defined in: [src/advanced-features.ts:38](https://github.com/mulekick/typescript-launchpad/blob/f4a9cdb57480ce14a27a779a7e385a4a8e8e85ea/src/advanced-features.ts#L38)
 
 `keyof` operator usage
 
@@ -56,7 +56,7 @@ Defined in: [src/advanced-features.ts:38](https://github.com/mulekick/typescript
 type typeFromKeys = objectShape["one" | "three"];
 ```
 
-Defined in: [src/advanced-features.ts:59](https://github.com/mulekick/typescript-launchpad/blob/d8ac85f697195820831ce6b398ef2aea71cddc66/src/advanced-features.ts#L59)
+Defined in: [src/advanced-features.ts:59](https://github.com/mulekick/typescript-launchpad/blob/f4a9cdb57480ce14a27a779a7e385a4a8e8e85ea/src/advanced-features.ts#L59)
 
 Indexed access types
 
@@ -73,7 +73,7 @@ Indexed access types
 type remapIndexesToKeys<T> = { [prop in keyof T as string | symbol]: T[prop] };
 ```
 
-Defined in: [src/advanced-features.ts:76](https://github.com/mulekick/typescript-launchpad/blob/d8ac85f697195820831ce6b398ef2aea71cddc66/src/advanced-features.ts#L76)
+Defined in: [src/advanced-features.ts:76](https://github.com/mulekick/typescript-launchpad/blob/f4a9cdb57480ce14a27a779a7e385a4a8e8e85ea/src/advanced-features.ts#L76)
 
 Mapped types
 
@@ -96,7 +96,7 @@ Mapped types
 const numericMap: remapIndexesToKeys<typeof arrayAsTuple>;
 ```
 
-Defined in: [src/advanced-features.ts:87](https://github.com/mulekick/typescript-launchpad/blob/d8ac85f697195820831ce6b398ef2aea71cddc66/src/advanced-features.ts#L87)
+Defined in: [src/advanced-features.ts:87](https://github.com/mulekick/typescript-launchpad/blob/f4a9cdb57480ce14a27a779a7e385a4a8e8e85ea/src/advanced-features.ts#L87)
 
 Create annotations from mapped types
 
@@ -113,7 +113,7 @@ Create annotations from mapped types
 type joe = "joe";
 ```
 
-Defined in: [src/advanced-features.ts:96](https://github.com/mulekick/typescript-launchpad/blob/d8ac85f697195820831ce6b398ef2aea71cddc66/src/advanced-features.ts#L96)
+Defined in: [src/advanced-features.ts:96](https://github.com/mulekick/typescript-launchpad/blob/f4a9cdb57480ce14a27a779a7e385a4a8e8e85ea/src/advanced-features.ts#L96)
 
 Template literal types
 
@@ -135,7 +135,7 @@ type objectDictFn = () => {
 };
 ```
 
-Defined in: [src/advanced-features.ts:111](https://github.com/mulekick/typescript-launchpad/blob/d8ac85f697195820831ce6b398ef2aea71cddc66/src/advanced-features.ts#L111)
+Defined in: [src/advanced-features.ts:111](https://github.com/mulekick/typescript-launchpad/blob/f4a9cdb57480ce14a27a779a7e385a4a8e8e85ea/src/advanced-features.ts#L111)
 
 Use index signature to "constrain" properties instead of declaring them
 
@@ -152,7 +152,7 @@ Use index signature to "constrain" properties instead of declaring them
 
 | Name | Type | Defined in |
 | ------ | ------ | ------ |
-| `length` | `number` | [src/advanced-features.ts:113](https://github.com/mulekick/typescript-launchpad/blob/d8ac85f697195820831ce6b398ef2aea71cddc66/src/advanced-features.ts#L113) |
+| `length` | `number` | [src/advanced-features.ts:113](https://github.com/mulekick/typescript-launchpad/blob/f4a9cdb57480ce14a27a779a7e385a4a8e8e85ea/src/advanced-features.ts#L113) |
 
 #### Remarks
 
@@ -167,7 +167,7 @@ Use index signature to "constrain" properties instead of declaring them
 const objectDict: objectDictFn;
 ```
 
-Defined in: [src/advanced-features.ts:122](https://github.com/mulekick/typescript-launchpad/blob/d8ac85f697195820831ce6b398ef2aea71cddc66/src/advanced-features.ts#L122)
+Defined in: [src/advanced-features.ts:122](https://github.com/mulekick/typescript-launchpad/blob/f4a9cdb57480ce14a27a779a7e385a4a8e8e85ea/src/advanced-features.ts#L122)
 
 Create a typed dictionary object
 
@@ -179,7 +179,7 @@ Create a typed dictionary object
 
 ### `abstract` abstractImplementation
 
-Defined in: [src/advanced-features.ts:145](https://github.com/mulekick/typescript-launchpad/blob/d8ac85f697195820831ce6b398ef2aea71cddc66/src/advanced-features.ts#L145)
+Defined in: [src/advanced-features.ts:145](https://github.com/mulekick/typescript-launchpad/blob/f4a9cdb57480ce14a27a779a7e385a4a8e8e85ea/src/advanced-features.ts#L145)
 
 Abstract class implementation
 
@@ -213,8 +213,8 @@ new abstractImplementation(): abstractImplementation;
 
 | Property | Modifier | Type | Defined in |
 | ------ | ------ | ------ | ------ |
-| <a id="one"></a> `one` | `public` | `string` | [src/advanced-features.ts:146](https://github.com/mulekick/typescript-launchpad/blob/d8ac85f697195820831ce6b398ef2aea71cddc66/src/advanced-features.ts#L146) |
-| <a id="five"></a> `five` | `abstract` | `null` | [src/advanced-features.ts:149](https://github.com/mulekick/typescript-launchpad/blob/d8ac85f697195820831ce6b398ef2aea71cddc66/src/advanced-features.ts#L149) |
+| <a id="one"></a> `one` | `public` | `string` | [src/advanced-features.ts:146](https://github.com/mulekick/typescript-launchpad/blob/f4a9cdb57480ce14a27a779a7e385a4a8e8e85ea/src/advanced-features.ts#L146) |
+| <a id="five"></a> `five` | `abstract` | `null` | [src/advanced-features.ts:149](https://github.com/mulekick/typescript-launchpad/blob/f4a9cdb57480ce14a27a779a7e385a4a8e8e85ea/src/advanced-features.ts#L149) |
 
 #### Methods
 
@@ -224,7 +224,7 @@ new abstractImplementation(): abstractImplementation;
 three(s): number;
 ```
 
-Defined in: [src/advanced-features.ts:147](https://github.com/mulekick/typescript-launchpad/blob/d8ac85f697195820831ce6b398ef2aea71cddc66/src/advanced-features.ts#L147)
+Defined in: [src/advanced-features.ts:147](https://github.com/mulekick/typescript-launchpad/blob/f4a9cdb57480ce14a27a779a7e385a4a8e8e85ea/src/advanced-features.ts#L147)
 
 ###### Parameters
 
@@ -246,7 +246,7 @@ Defined in: [src/advanced-features.ts:147](https://github.com/mulekick/typescrip
 four(s): string;
 ```
 
-Defined in: [src/advanced-features.ts:148](https://github.com/mulekick/typescript-launchpad/blob/d8ac85f697195820831ce6b398ef2aea71cddc66/src/advanced-features.ts#L148)
+Defined in: [src/advanced-features.ts:148](https://github.com/mulekick/typescript-launchpad/blob/f4a9cdb57480ce14a27a779a7e385a4a8e8e85ea/src/advanced-features.ts#L148)
 
 ###### Parameters
 
@@ -266,7 +266,7 @@ Defined in: [src/advanced-features.ts:148](https://github.com/mulekick/typescrip
 
 ### implementAbstractProp
 
-Defined in: [src/advanced-features.ts:158](https://github.com/mulekick/typescript-launchpad/blob/d8ac85f697195820831ce6b398ef2aea71cddc66/src/advanced-features.ts#L158)
+Defined in: [src/advanced-features.ts:158](https://github.com/mulekick/typescript-launchpad/blob/f4a9cdb57480ce14a27a779a7e385a4a8e8e85ea/src/advanced-features.ts#L158)
 
 Create subclass from an abstract class
 
@@ -298,8 +298,8 @@ new implementAbstractProp(): implementAbstractProp;
 
 | Property | Type | Default value | Overrides | Inherited from | Defined in |
 | ------ | ------ | ------ | ------ | ------ | ------ |
-| <a id="one-1"></a> `one` | `string` | `undefined` | - | [`abstractImplementation`](#abstractimplementation).[`one`](#one) | [src/advanced-features.ts:146](https://github.com/mulekick/typescript-launchpad/blob/d8ac85f697195820831ce6b398ef2aea71cddc66/src/advanced-features.ts#L146) |
-| <a id="five-1"></a> `five` | `null` | `null` | [`abstractImplementation`](#abstractimplementation).[`five`](#five) | - | [src/advanced-features.ts:159](https://github.com/mulekick/typescript-launchpad/blob/d8ac85f697195820831ce6b398ef2aea71cddc66/src/advanced-features.ts#L159) |
+| <a id="one-1"></a> `one` | `string` | `undefined` | - | [`abstractImplementation`](#abstractimplementation).[`one`](#one) | [src/advanced-features.ts:146](https://github.com/mulekick/typescript-launchpad/blob/f4a9cdb57480ce14a27a779a7e385a4a8e8e85ea/src/advanced-features.ts#L146) |
+| <a id="five-1"></a> `five` | `null` | `null` | [`abstractImplementation`](#abstractimplementation).[`five`](#five) | - | [src/advanced-features.ts:159](https://github.com/mulekick/typescript-launchpad/blob/f4a9cdb57480ce14a27a779a7e385a4a8e8e85ea/src/advanced-features.ts#L159) |
 
 #### Methods
 
@@ -309,7 +309,7 @@ new implementAbstractProp(): implementAbstractProp;
 three(s): number;
 ```
 
-Defined in: [src/advanced-features.ts:147](https://github.com/mulekick/typescript-launchpad/blob/d8ac85f697195820831ce6b398ef2aea71cddc66/src/advanced-features.ts#L147)
+Defined in: [src/advanced-features.ts:147](https://github.com/mulekick/typescript-launchpad/blob/f4a9cdb57480ce14a27a779a7e385a4a8e8e85ea/src/advanced-features.ts#L147)
 
 ###### Parameters
 
@@ -331,7 +331,7 @@ Defined in: [src/advanced-features.ts:147](https://github.com/mulekick/typescrip
 four(s): string;
 ```
 
-Defined in: [src/advanced-features.ts:148](https://github.com/mulekick/typescript-launchpad/blob/d8ac85f697195820831ce6b398ef2aea71cddc66/src/advanced-features.ts#L148)
+Defined in: [src/advanced-features.ts:148](https://github.com/mulekick/typescript-launchpad/blob/f4a9cdb57480ce14a27a779a7e385a4a8e8e85ea/src/advanced-features.ts#L148)
 
 ###### Parameters
 
@@ -353,7 +353,7 @@ Defined in: [src/advanced-features.ts:148](https://github.com/mulekick/typescrip
 six(): string;
 ```
 
-Defined in: [src/advanced-features.ts:160](https://github.com/mulekick/typescript-launchpad/blob/d8ac85f697195820831ce6b398ef2aea71cddc66/src/advanced-features.ts#L160)
+Defined in: [src/advanced-features.ts:160](https://github.com/mulekick/typescript-launchpad/blob/f4a9cdb57480ce14a27a779a7e385a4a8e8e85ea/src/advanced-features.ts#L160)
 
 ###### Returns
 
@@ -367,7 +367,7 @@ Defined in: [src/advanced-features.ts:160](https://github.com/mulekick/typescrip
 const fromNamespace: string;
 ```
 
-Defined in: [src/advanced-features.ts:169](https://github.com/mulekick/typescript-launchpad/blob/d8ac85f697195820831ce6b398ef2aea71cddc66/src/advanced-features.ts#L169)
+Defined in: [src/advanced-features.ts:169](https://github.com/mulekick/typescript-launchpad/blob/f4a9cdb57480ce14a27a779a7e385a4a8e8e85ea/src/advanced-features.ts#L169)
 
 Namespaced imports
 
@@ -383,7 +383,7 @@ Namespaced imports
 const fromAmbientModule: string;
 ```
 
-Defined in: [src/advanced-features.ts:178](https://github.com/mulekick/typescript-launchpad/blob/d8ac85f697195820831ce6b398ef2aea71cddc66/src/advanced-features.ts#L178)
+Defined in: [src/advanced-features.ts:178](https://github.com/mulekick/typescript-launchpad/blob/f4a9cdb57480ce14a27a779a7e385a4a8e8e85ea/src/advanced-features.ts#L178)
 
 Ambient imports
 
