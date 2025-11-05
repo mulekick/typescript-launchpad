@@ -16,7 +16,7 @@ Composed types.
 type ecmaPrimitives = ecmaPrimitives;
 ```
 
-Defined in: [src/composed-types.ts:23](https://github.com/mulekick/typescript-launchpad/blob/f4a9cdb57480ce14a27a779a7e385a4a8e8e85ea/src/composed-types.ts#L23)
+Defined in: [src/composed-types.ts:23](https://github.com/mulekick/typescript-launchpad/blob/c0b6d4936626de1a5b2131409fb7a742a1fc6661/src/composed-types.ts#L23)
 
 Union of primitive types
 
@@ -38,7 +38,7 @@ Union of primitive types
 type ecmaSpecialCases = ecmaSpecialCases;
 ```
 
-Defined in: [src/composed-types.ts:34](https://github.com/mulekick/typescript-launchpad/blob/f4a9cdb57480ce14a27a779a7e385a4a8e8e85ea/src/composed-types.ts#L34)
+Defined in: [src/composed-types.ts:34](https://github.com/mulekick/typescript-launchpad/blob/c0b6d4936626de1a5b2131409fb7a742a1fc6661/src/composed-types.ts#L34)
 
 Union of special types
 
@@ -56,7 +56,7 @@ Union of special types
 type impossible = never;
 ```
 
-Defined in: [src/composed-types.ts:43](https://github.com/mulekick/typescript-launchpad/blob/f4a9cdb57480ce14a27a779a7e385a4a8e8e85ea/src/composed-types.ts#L43)
+Defined in: [src/composed-types.ts:43](https://github.com/mulekick/typescript-launchpad/blob/c0b6d4936626de1a5b2131409fb7a742a1fc6661/src/composed-types.ts#L43)
 
 Empty intersection type
 
@@ -72,7 +72,7 @@ Empty intersection type
 type unit = "unit";
 ```
 
-Defined in: [src/composed-types.ts:54](https://github.com/mulekick/typescript-launchpad/blob/f4a9cdb57480ce14a27a779a7e385a4a8e8e85ea/src/composed-types.ts#L54)
+Defined in: [src/composed-types.ts:54](https://github.com/mulekick/typescript-launchpad/blob/c0b6d4936626de1a5b2131409fb7a742a1fc6661/src/composed-types.ts#L54)
 
 Subtype from a union type
 
@@ -90,7 +90,7 @@ Subtype from a union type
 type event = serverEvent | userEvent;
 ```
 
-Defined in: [src/composed-types.ts:68](https://github.com/mulekick/typescript-launchpad/blob/f4a9cdb57480ce14a27a779a7e385a4a8e8e85ea/src/composed-types.ts#L68)
+Defined in: [src/composed-types.ts:68](https://github.com/mulekick/typescript-launchpad/blob/c0b6d4936626de1a5b2131409fb7a742a1fc6661/src/composed-types.ts#L68)
 
 Discriminated union types
 

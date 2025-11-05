@@ -26,7 +26,7 @@ Sample declaration file.
 
 ### anotherShape
 
-Defined in: [src/declaration.d.ts:16](https://github.com/mulekick/typescript-launchpad/blob/f4a9cdb57480ce14a27a779a7e385a4a8e8e85ea/src/declaration.d.ts#L16)
+Defined in: [src/declaration.d.ts:16](https://github.com/mulekick/typescript-launchpad/blob/c0b6d4936626de1a5b2131409fb7a742a1fc6661/src/declaration.d.ts#L16)
 
 Interface declaration.
 
@@ -34,8 +34,8 @@ Interface declaration.
 
 | Property | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="aye"></a> `aye` | `string` | [src/declaration.d.ts:17](https://github.com/mulekick/typescript-launchpad/blob/f4a9cdb57480ce14a27a779a7e385a4a8e8e85ea/src/declaration.d.ts#L17) |
-| <a id="bee"></a> `bee` | `number` | [src/declaration.d.ts:18](https://github.com/mulekick/typescript-launchpad/blob/f4a9cdb57480ce14a27a779a7e385a4a8e8e85ea/src/declaration.d.ts#L18) |
+| <a id="aye"></a> `aye` | `string` | [src/declaration.d.ts:17](https://github.com/mulekick/typescript-launchpad/blob/c0b6d4936626de1a5b2131409fb7a742a1fc6661/src/declaration.d.ts#L17) |
+| <a id="bee"></a> `bee` | `number` | [src/declaration.d.ts:18](https://github.com/mulekick/typescript-launchpad/blob/c0b6d4936626de1a5b2131409fb7a742a1fc6661/src/declaration.d.ts#L18) |
 
 ## Type Aliases
 
@@ -45,6 +45,6 @@ Interface declaration.
 type returnVoid = returnVoid;
 ```
 
-Defined in: [src/declaration.d.ts:25](https://github.com/mulekick/typescript-launchpad/blob/f4a9cdb57480ce14a27a779a7e385a4a8e8e85ea/src/declaration.d.ts#L25)
+Defined in: [src/declaration.d.ts:25](https://github.com/mulekick/typescript-launchpad/blob/c0b6d4936626de1a5b2131409fb7a742a1fc6661/src/declaration.d.ts#L25)
 
 Type declaration.

@@ -16,7 +16,7 @@ Functional programming.
 type TypedFunction<R, T> = (...args) => T;
 ```
 
-Defined in: [src/functional-programming.ts:20](https://github.com/mulekick/typescript-launchpad/blob/f4a9cdb57480ce14a27a779a7e385a4a8e8e85ea/src/functional-programming.ts#L20)
+Defined in: [src/functional-programming.ts:20](https://github.com/mulekick/typescript-launchpad/blob/c0b6d4936626de1a5b2131409fb7a742a1fc6661/src/functional-programming.ts#L20)
 
 Generic function type
 
@@ -45,7 +45,7 @@ Generic function type
 type PromisifyFunction<T> = T extends TypedFunction<infer Z, infer X> ? (fn) => (...args) => Promise<Awaited<X>> : never;
 ```
 
-Defined in: [src/functional-programming.ts:26](https://github.com/mulekick/typescript-launchpad/blob/f4a9cdb57480ce14a27a779a7e385a4a8e8e85ea/src/functional-programming.ts#L26)
+Defined in: [src/functional-programming.ts:26](https://github.com/mulekick/typescript-launchpad/blob/c0b6d4936626de1a5b2131409fb7a742a1fc6661/src/functional-programming.ts#L26)
 
 Generic higher-order function type
 
@@ -66,9 +66,9 @@ type TimeExecution<T> = T extends TypedFunction<infer Z, infer X> ? (fn) => (...
 } : never;
 ```
 
-Defined in: [src/functional-programming.ts:32](https://github.com/mulekick/typescript-launchpad/blob/f4a9cdb57480ce14a27a779a7e385a4a8e8e85ea/src/functional-programming.ts#L32)
+Defined in: [src/functional-programming.ts:32](https://github.com/mulekick/typescript-launchpad/blob/c0b6d4936626de1a5b2131409fb7a742a1fc6661/src/functional-programming.ts#L32)
 
-Generic higher-order function type
+Another example
 
 #### Type Parameters
 
@@ -84,7 +84,7 @@ Generic higher-order function type
 const promisifySyncFn: PromisifyFunction<(...args) => string>;
 ```
 
-Defined in: [src/functional-programming.ts:41](https://github.com/mulekick/typescript-launchpad/blob/f4a9cdb57480ce14a27a779a7e385a4a8e8e85ea/src/functional-programming.ts#L41)
+Defined in: [src/functional-programming.ts:41](https://github.com/mulekick/typescript-launchpad/blob/c0b6d4936626de1a5b2131409fb7a742a1fc6661/src/functional-programming.ts#L41)
 
 Promisify sync function
 
@@ -101,7 +101,7 @@ Promisify sync function
 const promisifyAsyncFn: PromisifyFunction<(...args) => Promise<number>>;
 ```
 
-Defined in: [src/functional-programming.ts:56](https://github.com/mulekick/typescript-launchpad/blob/f4a9cdb57480ce14a27a779a7e385a4a8e8e85ea/src/functional-programming.ts#L56)
+Defined in: [src/functional-programming.ts:56](https://github.com/mulekick/typescript-launchpad/blob/c0b6d4936626de1a5b2131409fb7a742a1fc6661/src/functional-programming.ts#L56)
 
 Promisify async function
 
@@ -117,7 +117,7 @@ Promisify async function
 const timeExecutionHook: TimeExecution<(...args) => number>;
 ```
 
-Defined in: [src/functional-programming.ts:72](https://github.com/mulekick/typescript-launchpad/blob/f4a9cdb57480ce14a27a779a7e385a4a8e8e85ea/src/functional-programming.ts#L72)
+Defined in: [src/functional-programming.ts:72](https://github.com/mulekick/typescript-launchpad/blob/c0b6d4936626de1a5b2131409fb7a742a1fc6661/src/functional-programming.ts#L72)
 
 Time function execution
 
@@ -134,7 +134,7 @@ Time function execution
 const promisedString: ReturnType<typeof promisifySyncFn>;
 ```
 
-Defined in: [src/functional-programming.ts:85](https://github.com/mulekick/typescript-launchpad/blob/f4a9cdb57480ce14a27a779a7e385a4a8e8e85ea/src/functional-programming.ts#L85)
+Defined in: [src/functional-programming.ts:85](https://github.com/mulekick/typescript-launchpad/blob/c0b6d4936626de1a5b2131409fb7a742a1fc6661/src/functional-programming.ts#L85)
 
 Usage: pass a sync function to a hook
 
@@ -150,7 +150,7 @@ Usage: pass a sync function to a hook
 const promisedPromise: ReturnType<typeof promisifyAsyncFn>;
 ```
 
-Defined in: [src/functional-programming.ts:97](https://github.com/mulekick/typescript-launchpad/blob/f4a9cdb57480ce14a27a779a7e385a4a8e8e85ea/src/functional-programming.ts#L97)
+Defined in: [src/functional-programming.ts:97](https://github.com/mulekick/typescript-launchpad/blob/c0b6d4936626de1a5b2131409fb7a742a1fc6661/src/functional-programming.ts#L97)
 
 Usage: pass an async function to a hook
 
@@ -166,7 +166,7 @@ Usage: pass an async function to a hook
 const timedCountAllChars: ReturnType<typeof timeExecutionHook>;
 ```
 
-Defined in: [src/functional-programming.ts:111](https://github.com/mulekick/typescript-launchpad/blob/f4a9cdb57480ce14a27a779a7e385a4a8e8e85ea/src/functional-programming.ts#L111)
+Defined in: [src/functional-programming.ts:111](https://github.com/mulekick/typescript-launchpad/blob/c0b6d4936626de1a5b2131409fb7a742a1fc6661/src/functional-programming.ts#L111)
 
 Usage: pass an async function to a hook
 
