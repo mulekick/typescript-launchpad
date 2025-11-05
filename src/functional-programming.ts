@@ -26,7 +26,7 @@ export type TypedFunction<R extends Array<unknown>, T> = (...args: R)=> T;
 export type PromisifyFunction<T> = T extends TypedFunction<infer Z, infer X> ? (fn: T)=> (...args: Z)=> Promise<Awaited<X>> : never;
 
 /**
- * Generic higher-order function type
+ * Another example
  * @category 1. Function type expressions for higher order functions
  */
 export type TimeExecution<T> = T extends TypedFunction<infer Z, infer X> ? (fn: T)=> (...args: Z)=> {duration: number; result: X} : never;
