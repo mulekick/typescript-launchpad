@@ -16,7 +16,7 @@ Namespace declaration.
 cee: anotherShape;
 ```
 
-Defined in: [src/declaration.d.ts:32](https://github.com/mulekick/typescript-launchpad/blob/b15506df2d82d49328ac46657117606fe4ed18b8/src/declaration.d.ts#L32)
+Defined in: [src/declaration.d.ts:32](https://github.com/mulekick/typescript-launchpad/blob/936c913f721b904058caa46397daea79fcd7966b/src/declaration.d.ts#L32)
 
 ***
 
@@ -26,4 +26,4 @@ Defined in: [src/declaration.d.ts:32](https://github.com/mulekick/typescript-lau
 say: returnVoid;
 ```
 
-Defined in: [src/declaration.d.ts:33](https://github.com/mulekick/typescript-launchpad/blob/b15506df2d82d49328ac46657117606fe4ed18b8/src/declaration.d.ts#L33)
+Defined in: [src/declaration.d.ts:33](https://github.com/mulekick/typescript-launchpad/blob/936c913f721b904058caa46397daea79fcd7966b/src/declaration.d.ts#L33)

@@ -26,7 +26,7 @@ Implement a typed callable object literal.
 one: string;
 ```
 
-Defined in: [src/generic-types.ts:190](https://github.com/mulekick/typescript-launchpad/blob/b15506df2d82d49328ac46657117606fe4ed18b8/src/generic-types.ts#L190)
+Defined in: [src/generic-types.ts:190](https://github.com/mulekick/typescript-launchpad/blob/936c913f721b904058caa46397daea79fcd7966b/src/generic-types.ts#L190)
 
 ***
 
@@ -36,7 +36,7 @@ Defined in: [src/generic-types.ts:190](https://github.com/mulekick/typescript-la
 two: number | undefined;
 ```
 
-Defined in: [src/generic-types.ts:191](https://github.com/mulekick/typescript-launchpad/blob/b15506df2d82d49328ac46657117606fe4ed18b8/src/generic-types.ts#L191)
+Defined in: [src/generic-types.ts:191](https://github.com/mulekick/typescript-launchpad/blob/936c913f721b904058caa46397daea79fcd7966b/src/generic-types.ts#L191)
 
 ## Functions
 
@@ -46,7 +46,7 @@ Defined in: [src/generic-types.ts:191](https://github.com/mulekick/typescript-la
 function three(s): number;
 ```
 
-Defined in: [src/generic-types.ts:192](https://github.com/mulekick/typescript-launchpad/blob/b15506df2d82d49328ac46657117606fe4ed18b8/src/generic-types.ts#L192)
+Defined in: [src/generic-types.ts:192](https://github.com/mulekick/typescript-launchpad/blob/936c913f721b904058caa46397daea79fcd7966b/src/generic-types.ts#L192)
 
 #### Parameters
 
@@ -66,7 +66,7 @@ Defined in: [src/generic-types.ts:192](https://github.com/mulekick/typescript-la
 function four(s): string;
 ```
 
-Defined in: [src/generic-types.ts:193](https://github.com/mulekick/typescript-launchpad/blob/b15506df2d82d49328ac46657117606fe4ed18b8/src/generic-types.ts#L193)
+Defined in: [src/generic-types.ts:193](https://github.com/mulekick/typescript-launchpad/blob/936c913f721b904058caa46397daea79fcd7966b/src/generic-types.ts#L193)
 
 #### Parameters
 

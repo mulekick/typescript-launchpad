@@ -25,7 +25,7 @@ Typed functions.
 type basicFn = basicFn;
 ```
 
-Defined in: [src/typed-functions.ts:32](https://github.com/mulekick/typescript-launchpad/blob/b15506df2d82d49328ac46657117606fe4ed18b8/src/typed-functions.ts#L32)
+Defined in: [src/typed-functions.ts:32](https://github.com/mulekick/typescript-launchpad/blob/936c913f721b904058caa46397daea79fcd7966b/src/typed-functions.ts#L32)
 
 Typed function declaration
 
@@ -42,7 +42,7 @@ Typed function declaration
 const basic: basicFn;
 ```
 
-Defined in: [src/typed-functions.ts:40](https://github.com/mulekick/typescript-launchpad/blob/b15506df2d82d49328ac46657117606fe4ed18b8/src/typed-functions.ts#L40)
+Defined in: [src/typed-functions.ts:40](https://github.com/mulekick/typescript-launchpad/blob/936c913f721b904058caa46397daea79fcd7966b/src/typed-functions.ts#L40)
 
 Typed function implementation
 
@@ -58,7 +58,7 @@ Typed function implementation
 type restrictedFn = (v) => string;
 ```
 
-Defined in: [src/typed-functions.ts:48](https://github.com/mulekick/typescript-launchpad/blob/b15506df2d82d49328ac46657117606fe4ed18b8/src/typed-functions.ts#L48)
+Defined in: [src/typed-functions.ts:48](https://github.com/mulekick/typescript-launchpad/blob/936c913f721b904058caa46397daea79fcd7966b/src/typed-functions.ts#L48)
 
 Function accepting an union type
 
@@ -80,7 +80,7 @@ Function accepting an union type
 const restricted: restrictedFn;
 ```
 
-Defined in: [src/typed-functions.ts:54](https://github.com/mulekick/typescript-launchpad/blob/b15506df2d82d49328ac46657117606fe4ed18b8/src/typed-functions.ts#L54)
+Defined in: [src/typed-functions.ts:54](https://github.com/mulekick/typescript-launchpad/blob/936c913f721b904058caa46397daea79fcd7966b/src/typed-functions.ts#L54)
 
 Pass a literal type as an argument
 
@@ -94,7 +94,7 @@ type shapeConstructor = () =>
   | extendedShape;
 ```
 
-Defined in: [src/typed-functions.ts:74](https://github.com/mulekick/typescript-launchpad/blob/b15506df2d82d49328ac46657117606fe4ed18b8/src/typed-functions.ts#L74)
+Defined in: [src/typed-functions.ts:74](https://github.com/mulekick/typescript-launchpad/blob/936c913f721b904058caa46397daea79fcd7966b/src/typed-functions.ts#L74)
 
 Construct signature
 
@@ -117,7 +117,7 @@ function createObject(C):
   | extendedShape;
 ```
 
-Defined in: [src/typed-functions.ts:82](https://github.com/mulekick/typescript-launchpad/blob/b15506df2d82d49328ac46657117606fe4ed18b8/src/typed-functions.ts#L82)
+Defined in: [src/typed-functions.ts:82](https://github.com/mulekick/typescript-launchpad/blob/936c913f721b904058caa46397daea79fcd7966b/src/typed-functions.ts#L82)
 
 Construct signature usage
 
@@ -142,7 +142,7 @@ Construct signature usage
 function processEventWithDate(one, two?): string;
 ```
 
-Defined in: [src/typed-functions.ts:105](https://github.com/mulekick/typescript-launchpad/blob/b15506df2d82d49328ac46657117606fe4ed18b8/src/typed-functions.ts#L105)
+Defined in: [src/typed-functions.ts:105](https://github.com/mulekick/typescript-launchpad/blob/936c913f721b904058caa46397daea79fcd7966b/src/typed-functions.ts#L105)
 
 Function overloads implementation
 
@@ -174,7 +174,7 @@ Function overloads implementation
 function processEventWithDate(one, two): string;
 ```
 
-Defined in: [src/typed-functions.ts:106](https://github.com/mulekick/typescript-launchpad/blob/b15506df2d82d49328ac46657117606fe4ed18b8/src/typed-functions.ts#L106)
+Defined in: [src/typed-functions.ts:106](https://github.com/mulekick/typescript-launchpad/blob/936c913f721b904058caa46397daea79fcd7966b/src/typed-functions.ts#L106)
 
 Function overloads implementation
 
@@ -208,7 +208,7 @@ Function overloads implementation
 type doItUsingThis = (this, value) => number;
 ```
 
-Defined in: [src/typed-functions.ts:144](https://github.com/mulekick/typescript-launchpad/blob/b15506df2d82d49328ac46657117606fe4ed18b8/src/typed-functions.ts#L144)
+Defined in: [src/typed-functions.ts:144](https://github.com/mulekick/typescript-launchpad/blob/936c913f721b904058caa46397daea79fcd7966b/src/typed-functions.ts#L144)
 
 Annotate `this` in a function type expression
 
@@ -236,7 +236,7 @@ Annotate `this` in a function type expression
 const returnLength: doItUsingThis;
 ```
 
-Defined in: [src/typed-functions.ts:154](https://github.com/mulekick/typescript-launchpad/blob/b15506df2d82d49328ac46657117606fe4ed18b8/src/typed-functions.ts#L154)
+Defined in: [src/typed-functions.ts:154](https://github.com/mulekick/typescript-launchpad/blob/936c913f721b904058caa46397daea79fcd7966b/src/typed-functions.ts#L154)
 
 Type annotations for `this`.
 
@@ -253,7 +253,7 @@ Type annotations for `this`.
 type restParamsFn<T> = (one, two, ...three) => string;
 ```
 
-Defined in: [src/typed-functions.ts:168](https://github.com/mulekick/typescript-launchpad/blob/b15506df2d82d49328ac46657117606fe4ed18b8/src/typed-functions.ts#L168)
+Defined in: [src/typed-functions.ts:168](https://github.com/mulekick/typescript-launchpad/blob/936c913f721b904058caa46397daea79fcd7966b/src/typed-functions.ts#L168)
 
 Generic function type expression with rest parameters.
 
@@ -287,7 +287,7 @@ const fnAcceptRestParams: restParamsFn<
 }>;
 ```
 
-Defined in: [src/typed-functions.ts:174](https://github.com/mulekick/typescript-launchpad/blob/b15506df2d82d49328ac46657117606fe4ed18b8/src/typed-functions.ts#L174)
+Defined in: [src/typed-functions.ts:174](https://github.com/mulekick/typescript-launchpad/blob/936c913f721b904058caa46397daea79fcd7966b/src/typed-functions.ts#L174)
 
 Implementation using typed rest parameters.
 
@@ -299,7 +299,7 @@ Implementation using typed rest parameters.
 type voidFn = () => void;
 ```
 
-Defined in: [src/typed-functions.ts:219](https://github.com/mulekick/typescript-launchpad/blob/b15506df2d82d49328ac46657117606fe4ed18b8/src/typed-functions.ts#L219)
+Defined in: [src/typed-functions.ts:219](https://github.com/mulekick/typescript-launchpad/blob/936c913f721b904058caa46397daea79fcd7966b/src/typed-functions.ts#L219)
 
 `void` in function type expressions
 
@@ -319,7 +319,7 @@ Defined in: [src/typed-functions.ts:219](https://github.com/mulekick/typescript-
 const valid: voidFn;
 ```
 
-Defined in: [src/typed-functions.ts:228](https://github.com/mulekick/typescript-launchpad/blob/b15506df2d82d49328ac46657117606fe4ed18b8/src/typed-functions.ts#L228)
+Defined in: [src/typed-functions.ts:228](https://github.com/mulekick/typescript-launchpad/blob/936c913f721b904058caa46397daea79fcd7966b/src/typed-functions.ts#L228)
 
 `void` as a return type annotation
 

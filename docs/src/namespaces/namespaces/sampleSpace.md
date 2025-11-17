@@ -21,7 +21,7 @@ Sample namespace
 type namespacedType = "namespaced" | "type";
 ```
 
-Defined in: [src/namespaces.ts:16](https://github.com/mulekick/typescript-launchpad/blob/b15506df2d82d49328ac46657117606fe4ed18b8/src/namespaces.ts#L16)
+Defined in: [src/namespaces.ts:16](https://github.com/mulekick/typescript-launchpad/blob/936c913f721b904058caa46397daea79fcd7966b/src/namespaces.ts#L16)
 
 ## Variables
 
@@ -31,4 +31,4 @@ Defined in: [src/namespaces.ts:16](https://github.com/mulekick/typescript-launch
 const namespacedValue: namespacedType;
 ```
 
-Defined in: [src/namespaces.ts:17](https://github.com/mulekick/typescript-launchpad/blob/b15506df2d82d49328ac46657117606fe4ed18b8/src/namespaces.ts#L17)
+Defined in: [src/namespaces.ts:17](https://github.com/mulekick/typescript-launchpad/blob/936c913f721b904058caa46397daea79fcd7966b/src/namespaces.ts#L17)

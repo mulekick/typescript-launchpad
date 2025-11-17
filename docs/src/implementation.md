@@ -25,6 +25,6 @@ Sample implementation file.
 const anotherObject: anotherShape;
 ```
 
-Defined in: [src/implementation.ts:14](https://github.com/mulekick/typescript-launchpad/blob/b15506df2d82d49328ac46657117606fe4ed18b8/src/implementation.ts#L14)
+Defined in: [src/implementation.ts:14](https://github.com/mulekick/typescript-launchpad/blob/936c913f721b904058caa46397daea79fcd7966b/src/implementation.ts#L14)
 
 Access interface.
