@@ -8,6 +8,11 @@
 
 Sample namespace
 
+## Table of contents
+
+* [Type Aliases](#type-aliases)
+* [Variables](#variables)
+
 ## Type Aliases
 
 ### namespacedType
@@ -16,7 +21,7 @@ Sample namespace
 type namespacedType = "namespaced" | "type";
 ```
 
-Defined in: [src/namespaces.ts:16](https://github.com/mulekick/typescript-launchpad/blob/c0b6d4936626de1a5b2131409fb7a742a1fc6661/src/namespaces.ts#L16)
+Defined in: [src/namespaces.ts:16](https://github.com/mulekick/typescript-launchpad/blob/9d275799f8527fc70e0bd68e70215a77833b0104/src/namespaces.ts#L16)
 
 ## Variables
 
@@ -26,4 +31,4 @@ Defined in: [src/namespaces.ts:16](https://github.com/mulekick/typescript-launch
 const namespacedValue: namespacedType;
 ```
 
-Defined in: [src/namespaces.ts:17](https://github.com/mulekick/typescript-launchpad/blob/c0b6d4936626de1a5b2131409fb7a742a1fc6661/src/namespaces.ts#L17)
+Defined in: [src/namespaces.ts:17](https://github.com/mulekick/typescript-launchpad/blob/9d275799f8527fc70e0bd68e70215a77833b0104/src/namespaces.ts#L17)

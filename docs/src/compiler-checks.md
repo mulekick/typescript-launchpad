@@ -10,4 +10,4 @@ Built-in compiler checks.
 
 ## Remarks
 
-- Illustrate how the compiler flags common errors as well as type-specific errors.
+* Illustrate how the compiler flags common errors as well as type-specific errors.

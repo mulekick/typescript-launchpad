@@ -8,18 +8,25 @@
 
 Generic types.
 
+## Table of contents
+
+* [1. Generic shapes](#1-generic-shapes)
+* [2. Generic implementations](#2-generic-implementations)
+* [3. Generic functions](#3-generic-functions)
+* [4. Constrained generics](#4-constrained-generics)
+
 ## 1. Generic shapes
 
 ### genericInterface
 
-Defined in: [src/generic-types.ts:28](https://github.com/mulekick/typescript-launchpad/blob/c0b6d4936626de1a5b2131409fb7a742a1fc6661/src/generic-types.ts#L28)
+Defined in: [src/generic-types.ts:28](https://github.com/mulekick/typescript-launchpad/blob/9d275799f8527fc70e0bd68e70215a77833b0104/src/generic-types.ts#L28)
 
 Generic interface
 
 #### Remarks
 
-- Defines public contracts (no need to define constructor).
-- Read the [notes](https://www.typescriptlang.org/docs/handbook/2/classes.html#getters--setters) for best practices on accessors.
+* Defines public contracts (no need to define constructor).
+* Read the [notes](https://www.typescriptlang.org/docs/handbook/2/classes.html#getters--setters) for best practices on accessors.
 
 #### Type Parameters
 
@@ -35,7 +42,7 @@ Generic interface
 setOne(one): void;
 ```
 
-Defined in: [src/generic-types.ts:29](https://github.com/mulekick/typescript-launchpad/blob/c0b6d4936626de1a5b2131409fb7a742a1fc6661/src/generic-types.ts#L29)
+Defined in: [src/generic-types.ts:29](https://github.com/mulekick/typescript-launchpad/blob/9d275799f8527fc70e0bd68e70215a77833b0104/src/generic-types.ts#L29)
 
 ###### Parameters
 
@@ -53,7 +60,7 @@ Defined in: [src/generic-types.ts:29](https://github.com/mulekick/typescript-lau
 getOne(): T;
 ```
 
-Defined in: [src/generic-types.ts:30](https://github.com/mulekick/typescript-launchpad/blob/c0b6d4936626de1a5b2131409fb7a742a1fc6661/src/generic-types.ts#L30)
+Defined in: [src/generic-types.ts:30](https://github.com/mulekick/typescript-launchpad/blob/9d275799f8527fc70e0bd68e70215a77833b0104/src/generic-types.ts#L30)
 
 ###### Returns
 
@@ -63,15 +70,15 @@ Defined in: [src/generic-types.ts:30](https://github.com/mulekick/typescript-lau
 
 ### genericClass
 
-Defined in: [src/generic-types.ts:42](https://github.com/mulekick/typescript-launchpad/blob/c0b6d4936626de1a5b2131409fb7a742a1fc6661/src/generic-types.ts#L42)
+Defined in: [src/generic-types.ts:42](https://github.com/mulekick/typescript-launchpad/blob/9d275799f8527fc70e0bd68e70215a77833b0104/src/generic-types.ts#L42)
 
 Generic class
 
 #### Remarks
 
-- Can be made more adaptable if T is an object shape instead of a primitive type.
-- Use indexed types to access object shape inner types and type private properties.
-- Class expressions are a pain when made generic because of tsconfig's `isolatedDeclarations`, avoid.
+* Can be made more adaptable if T is an object shape instead of a primitive type.
+* Use indexed types to access object shape inner types and type private properties.
+* Class expressions are a pain when made generic because of tsconfig's `isolatedDeclarations`, avoid.
 
 #### Type Parameters
 
@@ -81,7 +88,7 @@ Generic class
 
 #### Implements
 
-- [`genericInterface`](#genericinterface)\<`T`\>
+* [`genericInterface`](#genericinterface)<`T`>
 
 #### Constructors
 
@@ -91,7 +98,7 @@ Generic class
 new genericClass<T>(one): genericClass<T>;
 ```
 
-Defined in: [src/generic-types.ts:44](https://github.com/mulekick/typescript-launchpad/blob/c0b6d4936626de1a5b2131409fb7a742a1fc6661/src/generic-types.ts#L44)
+Defined in: [src/generic-types.ts:44](https://github.com/mulekick/typescript-launchpad/blob/9d275799f8527fc70e0bd68e70215a77833b0104/src/generic-types.ts#L44)
 
 ###### Parameters
 
@@ -101,7 +108,7 @@ Defined in: [src/generic-types.ts:44](https://github.com/mulekick/typescript-lau
 
 ###### Returns
 
-[`genericClass`](#genericclass)\<`T`\>
+[`genericClass`](#genericclass)<`T`>
 
 #### Methods
 
@@ -111,7 +118,7 @@ Defined in: [src/generic-types.ts:44](https://github.com/mulekick/typescript-lau
 setOne(one): void;
 ```
 
-Defined in: [src/generic-types.ts:45](https://github.com/mulekick/typescript-launchpad/blob/c0b6d4936626de1a5b2131409fb7a742a1fc6661/src/generic-types.ts#L45)
+Defined in: [src/generic-types.ts:45](https://github.com/mulekick/typescript-launchpad/blob/9d275799f8527fc70e0bd68e70215a77833b0104/src/generic-types.ts#L45)
 
 ###### Parameters
 
@@ -133,7 +140,7 @@ Defined in: [src/generic-types.ts:45](https://github.com/mulekick/typescript-lau
 getOne(): T;
 ```
 
-Defined in: [src/generic-types.ts:46](https://github.com/mulekick/typescript-launchpad/blob/c0b6d4936626de1a5b2131409fb7a742a1fc6661/src/generic-types.ts#L46)
+Defined in: [src/generic-types.ts:46](https://github.com/mulekick/typescript-launchpad/blob/9d275799f8527fc70e0bd68e70215a77833b0104/src/generic-types.ts#L46)
 
 ###### Returns
 
@@ -151,14 +158,14 @@ Defined in: [src/generic-types.ts:46](https://github.com/mulekick/typescript-lau
 const e: InstanceType<typeof genericClass>;
 ```
 
-Defined in: [src/generic-types.ts:56](https://github.com/mulekick/typescript-launchpad/blob/c0b6d4936626de1a5b2131409fb7a742a1fc6661/src/generic-types.ts#L56)
+Defined in: [src/generic-types.ts:56](https://github.com/mulekick/typescript-launchpad/blob/9d275799f8527fc70e0bd68e70215a77833b0104/src/generic-types.ts#L56)
 
 Generic class usage
 
 #### Remarks
 
-- Removing the type annotation on the constructor call makes the compiler infer the type from the argument, avoid.
-- [Utility types](https://www.typescriptlang.org/docs/handbook/utility-types.html) are useful for annotating exports of generic-based classes instances.
+* Removing the type annotation on the constructor call makes the compiler infer the type from the argument, avoid.
+* [Utility types](https://www.typescriptlang.org/docs/handbook/utility-types.html) are useful for annotating exports of generic-based classes instances.
 
 ## 3. Generic functions
 
@@ -168,7 +175,7 @@ Generic class usage
 type genericFn<T, U> = (a, b) => [U, T];
 ```
 
-Defined in: [src/generic-types.ts:77](https://github.com/mulekick/typescript-launchpad/blob/c0b6d4936626de1a5b2131409fb7a742a1fc6661/src/generic-types.ts#L77)
+Defined in: [src/generic-types.ts:77](https://github.com/mulekick/typescript-launchpad/blob/9d275799f8527fc70e0bd68e70215a77833b0104/src/generic-types.ts#L77)
 
 Generic function type expression
 
@@ -188,18 +195,18 @@ Generic function type expression
 
 #### Returns
 
-\[`U`, `T`\]
+\[`U`, `T`]
 
 #### Remarks
 
-- Declare a (simple here) function signature over 2 generic types.
-- Returned value must be a tuple of types (subtype of the array).
-- Best practices :
+* Declare a (simple here) function signature over 2 generic types.
+* Returned value must be a tuple of types (subtype of the array).
+* Best practices :
   1. Always use as few type parameters as possible.
   2. When possible, use the type parameter itself rather than constraining it.
   3. If a type parameter only appears in one location, strongly reconsider if you actually need it.
-- The same result can be achieved with interfaces, however types are preferred.
-- Note : _it is not possible to create generic enums and namespaces_.
+* The same result can be achieved with interfaces, however types are preferred.
+* Note : *it is not possible to create generic enums and namespaces*.
 
 ***
 
@@ -209,15 +216,15 @@ Generic function type expression
 const generic: genericFn<string, number>;
 ```
 
-Defined in: [src/generic-types.ts:87](https://github.com/mulekick/typescript-launchpad/blob/c0b6d4936626de1a5b2131409fb7a742a1fc6661/src/generic-types.ts#L87)
+Defined in: [src/generic-types.ts:87](https://github.com/mulekick/typescript-launchpad/blob/9d275799f8527fc70e0bd68e70215a77833b0104/src/generic-types.ts#L87)
 
 Function implementation using a generic
 
 #### Remarks
 
-- Always separate signature declaration and function implementation (for clarity).
-- Typescript can also [infer types](https://www.typescriptlang.org/docs/handbook/2/functions.html#generic-functions) from generic functions arguments.
-- However, it is better to **_always provide functions implementations with specific types_** as seen below.
+* Always separate signature declaration and function implementation (for clarity).
+* Typescript can also [infer types](https://www.typescriptlang.org/docs/handbook/2/functions.html#generic-functions) from generic functions arguments.
+* However, it is better to ***always provide functions implementations with specific types*** as seen below.
 
 ## 4. Constrained generics
 
@@ -227,7 +234,7 @@ Function implementation using a generic
 type constrainedFn<T> = (o) => string;
 ```
 
-Defined in: [src/generic-types.ts:116](https://github.com/mulekick/typescript-launchpad/blob/c0b6d4936626de1a5b2131409fb7a742a1fc6661/src/generic-types.ts#L116)
+Defined in: [src/generic-types.ts:116](https://github.com/mulekick/typescript-launchpad/blob/9d275799f8527fc70e0bd68e70215a77833b0104/src/generic-types.ts#L116)
 
 Constrained generic types
 
@@ -249,7 +256,7 @@ Constrained generic types
 
 #### Remarks
 
-- Equivalent of `type constrainedFn<T> = T extends objectShape ? (o: T)=> string : never;`, which one is better is debatable.
+* Equivalent of `type constrainedFn<T> = T extends objectShape ? (o: T)=> string : never;`, which one is better is debatable.
 
 ***
 
@@ -261,35 +268,35 @@ const constrained: constrainedFn<
 | extendedShape>;
 ```
 
-Defined in: [src/generic-types.ts:125](https://github.com/mulekick/typescript-launchpad/blob/c0b6d4936626de1a5b2131409fb7a742a1fc6661/src/generic-types.ts#L125)
+Defined in: [src/generic-types.ts:125](https://github.com/mulekick/typescript-launchpad/blob/9d275799f8527fc70e0bd68e70215a77833b0104/src/generic-types.ts#L125)
 
 Constrained function implementation and typing.
 
 #### Remarks
 
-- Type inference is possible in this case as well but also discouraged.
-- Also see this [very important consideration](https://www.typescriptlang.org/docs/handbook/2/functions.html#working-with-constrained-values) on constraints.
+* Type inference is possible in this case as well but also discouraged.
+* Also see this [very important consideration](https://www.typescriptlang.org/docs/handbook/2/functions.html#working-with-constrained-values) on constraints.
 
 ***
 
 ### constrainedGenericClass
 
-Defined in: [src/generic-types.ts:144](https://github.com/mulekick/typescript-launchpad/blob/c0b6d4936626de1a5b2131409fb7a742a1fc6661/src/generic-types.ts#L144)
+Defined in: [src/generic-types.ts:144](https://github.com/mulekick/typescript-launchpad/blob/9d275799f8527fc70e0bd68e70215a77833b0104/src/generic-types.ts#L144)
 
 Constrained generic class.
 
 #### Remarks
 
-- Extending a generic interface to isolate declaration makes no point in this case.
-- Note : **_ static class members cannot use the type parameters_**.
-- See also this guide on how to set [defaults for type parameters](https://www.typescriptlang.org/docs/handbook/2/generics.html#generic-parameter-defaults).
-- This example also illustrates the use of [indexed access types](https://www.typescriptlang.org/docs/handbook/2/indexed-access-types.html).
+* Extending a generic interface to isolate declaration makes no point in this case.
+* Note : **\_ static class members cannot use the type parameters\_**.
+* See also this guide on how to set [defaults for type parameters](https://www.typescriptlang.org/docs/handbook/2/generics.html#generic-parameter-defaults).
+* This example also illustrates the use of [indexed access types](https://www.typescriptlang.org/docs/handbook/2/indexed-access-types.html).
 
 #### Type Parameters
 
 | Type Parameter |
 | ------ |
-| `T` *extends* \| [`objectShape`](../basic-types.md#objectshape) \| [`extendedShape`](../basic-types.md#extendedshape) |
+| `T` *extends* | [`objectShape`](../basic-types.md#objectshape) | [`extendedShape`](../basic-types.md#extendedshape) |
 
 #### Constructors
 
@@ -299,7 +306,7 @@ Constrained generic class.
 new constrainedGenericClass<T>(z): constrainedGenericClass<T>;
 ```
 
-Defined in: [src/generic-types.ts:147](https://github.com/mulekick/typescript-launchpad/blob/c0b6d4936626de1a5b2131409fb7a742a1fc6661/src/generic-types.ts#L147)
+Defined in: [src/generic-types.ts:147](https://github.com/mulekick/typescript-launchpad/blob/9d275799f8527fc70e0bd68e70215a77833b0104/src/generic-types.ts#L147)
 
 ###### Parameters
 
@@ -309,14 +316,14 @@ Defined in: [src/generic-types.ts:147](https://github.com/mulekick/typescript-la
 
 ###### Returns
 
-[`constrainedGenericClass`](#constrainedgenericclass)\<`T`\>
+[`constrainedGenericClass`](#constrainedgenericclass)<`T`>
 
 #### Properties
 
 | Property | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="six"></a> `six` | `T` | [src/generic-types.ts:145](https://github.com/mulekick/typescript-launchpad/blob/c0b6d4936626de1a5b2131409fb7a742a1fc6661/src/generic-types.ts#L145) |
-| <a id="seven"></a> `seven` | `T`\[`"three"`\] | [src/generic-types.ts:146](https://github.com/mulekick/typescript-launchpad/blob/c0b6d4936626de1a5b2131409fb7a742a1fc6661/src/generic-types.ts#L146) |
+| <a id="six"></a> `six` | `T` | [src/generic-types.ts:145](https://github.com/mulekick/typescript-launchpad/blob/9d275799f8527fc70e0bd68e70215a77833b0104/src/generic-types.ts#L145) |
+| <a id="seven"></a> `seven` | `T`\[`"three"`] | [src/generic-types.ts:146](https://github.com/mulekick/typescript-launchpad/blob/9d275799f8527fc70e0bd68e70215a77833b0104/src/generic-types.ts#L146) |
 
 #### Methods
 
@@ -326,7 +333,7 @@ Defined in: [src/generic-types.ts:147](https://github.com/mulekick/typescript-la
 eight(): number;
 ```
 
-Defined in: [src/generic-types.ts:152](https://github.com/mulekick/typescript-launchpad/blob/c0b6d4936626de1a5b2131409fb7a742a1fc6661/src/generic-types.ts#L152)
+Defined in: [src/generic-types.ts:152](https://github.com/mulekick/typescript-launchpad/blob/9d275799f8527fc70e0bd68e70215a77833b0104/src/generic-types.ts#L152)
 
 ###### Returns
 
@@ -340,13 +347,13 @@ Defined in: [src/generic-types.ts:152](https://github.com/mulekick/typescript-la
 type callableProps = "three" | "four";
 ```
 
-Defined in: [src/generic-types.ts:163](https://github.com/mulekick/typescript-launchpad/blob/c0b6d4936626de1a5b2131409fb7a742a1fc6661/src/generic-types.ts#L163)
+Defined in: [src/generic-types.ts:163](https://github.com/mulekick/typescript-launchpad/blob/9d275799f8527fc70e0bd68e70215a77833b0104/src/generic-types.ts#L163)
 
 Union of callable object properties.
 
 #### Remarks
 
-- `keyof` doesn't work here, keys must be declared using a dedicated union type.
+* `keyof` doesn't work here, keys must be declared using a dedicated union type.
 
 ***
 
@@ -356,7 +363,7 @@ Union of callable object properties.
 type makeCallable<T, R> = (this, ...s) => ReturnType<T[R]>;
 ```
 
-Defined in: [src/generic-types.ts:171](https://github.com/mulekick/typescript-launchpad/blob/c0b6d4936626de1a5b2131409fb7a742a1fc6661/src/generic-types.ts#L171)
+Defined in: [src/generic-types.ts:171](https://github.com/mulekick/typescript-launchpad/blob/9d275799f8527fc70e0bd68e70215a77833b0104/src/generic-types.ts#L171)
 
 Generic callable object type.
 
@@ -372,15 +379,15 @@ Generic callable object type.
 | Parameter | Type |
 | ------ | ------ |
 | `this` | `T` |
-| ...`s` | `Parameters`\<`T`\[`R`\]\> |
+| ...`s` | `Parameters`<`T`\[`R`]> |
 
 #### Returns
 
-`ReturnType`\<`T`\[`R`\]\>
+`ReturnType`<`T`\[`R`]>
 
 #### Remarks
 
-- From there, any object that matches the generic type can be made callable.
+* From there, any object that matches the generic type can be made callable.
 
 ***
 
@@ -390,13 +397,13 @@ Generic callable object type.
 type callableLiteral = objectShape & makeCallable<objectShape, "three">;
 ```
 
-Defined in: [src/generic-types.ts:181](https://github.com/mulekick/typescript-launchpad/blob/c0b6d4936626de1a5b2131409fb7a742a1fc6661/src/generic-types.ts#L181)
+Defined in: [src/generic-types.ts:181](https://github.com/mulekick/typescript-launchpad/blob/9d275799f8527fc70e0bd68e70215a77833b0104/src/generic-types.ts#L181)
 
 Type an existing object shape as callable.
 
 #### Remarks
 
-- Use the generic to bind the object call signature to on if its methods.
+* Use the generic to bind the object call signature to on if its methods.
 
 ***
 
@@ -406,10 +413,10 @@ Type an existing object shape as callable.
 const callThisLiteral: callableLiteral;
 ```
 
-Defined in: [src/generic-types.ts:189](https://github.com/mulekick/typescript-launchpad/blob/c0b6d4936626de1a5b2131409fb7a742a1fc6661/src/generic-types.ts#L189)
+Defined in: [src/generic-types.ts:189](https://github.com/mulekick/typescript-launchpad/blob/9d275799f8527fc70e0bd68e70215a77833b0104/src/generic-types.ts#L189)
 
 Implement a typed callable object literal.
 
 #### Remarks
 
-- Declare literal as a function then add missing keys, compiler OK.
+* Declare literal as a function then add missing keys, compiler OK.

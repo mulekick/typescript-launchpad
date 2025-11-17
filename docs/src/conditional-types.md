@@ -8,6 +8,12 @@
 
 Conditional types.
 
+## Table of contents
+
+* [1. Constrain generics using conditions](#1-constrain-generics-using-conditions)
+* [2. The `infer` keyword](#2-the-infer-keyword)
+* [3. Distributed types](#3-distributed-types)
+
 ## 1. Constrain generics using conditions
 
 ### conditional
@@ -16,7 +22,7 @@ Conditional types.
 type conditional<T> = conditional<T>;
 ```
 
-Defined in: [src/conditional-types.ts:41](https://github.com/mulekick/typescript-launchpad/blob/c0b6d4936626de1a5b2131409fb7a742a1fc6661/src/conditional-types.ts#L41)
+Defined in: [src/conditional-types.ts:41](https://github.com/mulekick/typescript-launchpad/blob/9d275799f8527fc70e0bd68e70215a77833b0104/src/conditional-types.ts#L41)
 
 Create a conditional generic type with the `extends` keyword
 
@@ -28,7 +34,7 @@ Create a conditional generic type with the `extends` keyword
 
 #### Remarks
 
-- Conditionals work with any type (primitive, custom, indexed access, etc).
+* Conditionals work with any type (primitive, custom, indexed access, etc).
 
 ***
 
@@ -38,7 +44,7 @@ Create a conditional generic type with the `extends` keyword
 type constrained<T> = constrained<T>;
 ```
 
-Defined in: [src/conditional-types.ts:48](https://github.com/mulekick/typescript-launchpad/blob/c0b6d4936626de1a5b2131409fb7a742a1fc6661/src/conditional-types.ts#L48)
+Defined in: [src/conditional-types.ts:48](https://github.com/mulekick/typescript-launchpad/blob/9d275799f8527fc70e0bd68e70215a77833b0104/src/conditional-types.ts#L48)
 
 Constrain a generic type using a condition
 
@@ -56,7 +62,7 @@ Constrain a generic type using a condition
 type typeNarrowing<T> = typeNarrowing<T>;
 ```
 
-Defined in: [src/conditional-types.ts:57](https://github.com/mulekick/typescript-launchpad/blob/c0b6d4936626de1a5b2131409fb7a742a1fc6661/src/conditional-types.ts#L57)
+Defined in: [src/conditional-types.ts:57](https://github.com/mulekick/typescript-launchpad/blob/9d275799f8527fc70e0bd68e70215a77833b0104/src/conditional-types.ts#L57)
 
 Type narrowing (type equivalent of code narrowing)
 
@@ -64,11 +70,11 @@ Type narrowing (type equivalent of code narrowing)
 
 | Type Parameter |
 | ------ |
-| `T` *extends* [`objectShape`](basic-types.md#objectshape) \| `string` |
+| `T` *extends* [`objectShape`](basic-types.md#objectshape) | `string` |
 
 #### Remarks
 
-- Complex type narrowing can be achieved by `nesting` conditional types.
+* Complex type narrowing can be achieved by `nesting` conditional types.
 
 ***
 
@@ -78,7 +84,7 @@ Type narrowing (type equivalent of code narrowing)
 const possible: typeNarrowing<string>;
 ```
 
-Defined in: [src/conditional-types.ts:77](https://github.com/mulekick/typescript-launchpad/blob/c0b6d4936626de1a5b2131409fb7a742a1fc6661/src/conditional-types.ts#L77)
+Defined in: [src/conditional-types.ts:77](https://github.com/mulekick/typescript-launchpad/blob/9d275799f8527fc70e0bd68e70215a77833b0104/src/conditional-types.ts#L77)
 
 Type narrowing example 1
 
@@ -90,7 +96,7 @@ Type narrowing example 1
 const alsoPossible: typeNarrowing<objectShape>;
 ```
 
-Defined in: [src/conditional-types.ts:83](https://github.com/mulekick/typescript-launchpad/blob/c0b6d4936626de1a5b2131409fb7a742a1fc6661/src/conditional-types.ts#L83)
+Defined in: [src/conditional-types.ts:83](https://github.com/mulekick/typescript-launchpad/blob/9d275799f8527fc70e0bd68e70215a77833b0104/src/conditional-types.ts#L83)
 
 Type narrowing example 2
 
@@ -102,7 +108,7 @@ Type narrowing example 2
 type echoingType<T> = echoingType<T>;
 ```
 
-Defined in: [src/conditional-types.ts:93](https://github.com/mulekick/typescript-launchpad/blob/c0b6d4936626de1a5b2131409fb7a742a1fc6661/src/conditional-types.ts#L93)
+Defined in: [src/conditional-types.ts:93](https://github.com/mulekick/typescript-launchpad/blob/9d275799f8527fc70e0bd68e70215a77833b0104/src/conditional-types.ts#L93)
 
 `infer` keyword.
 
@@ -114,8 +120,8 @@ Defined in: [src/conditional-types.ts:93](https://github.com/mulekick/typescript
 
 #### Remarks
 
-- `infer` complements conditionals and cannot be used outside an extends clause.
-- `infer` is used within conditionals to declare a type variable within the constraint.
+* `infer` complements conditionals and cannot be used outside an extends clause.
+* `infer` is used within conditionals to declare a type variable within the constraint.
 
 ***
 
@@ -125,13 +131,13 @@ Defined in: [src/conditional-types.ts:93](https://github.com/mulekick/typescript
 type echoedType = number;
 ```
 
-Defined in: [src/conditional-types.ts:102](https://github.com/mulekick/typescript-launchpad/blob/c0b6d4936626de1a5b2131409fb7a742a1fc6661/src/conditional-types.ts#L102)
+Defined in: [src/conditional-types.ts:102](https://github.com/mulekick/typescript-launchpad/blob/9d275799f8527fc70e0bd68e70215a77833b0104/src/conditional-types.ts#L102)
 
 Simplest possible use of `infer`
 
 #### Remarks
 
-- `infer` allows dynamic capture of types in thee extends clause and can be thought of as "unwrapping a type".
+* `infer` allows dynamic capture of types in thee extends clause and can be thought of as "unwrapping a type".
 
 ***
 
@@ -141,7 +147,7 @@ Simplest possible use of `infer`
 type layerOne<T> = layerOne<T>;
 ```
 
-Defined in: [src/conditional-types.ts:109](https://github.com/mulekick/typescript-launchpad/blob/c0b6d4936626de1a5b2131409fb7a742a1fc6661/src/conditional-types.ts#L109)
+Defined in: [src/conditional-types.ts:109](https://github.com/mulekick/typescript-launchpad/blob/9d275799f8527fc70e0bd68e70215a77833b0104/src/conditional-types.ts#L109)
 
 "Inner" type wrapper
 
@@ -159,7 +165,7 @@ Defined in: [src/conditional-types.ts:109](https://github.com/mulekick/typescrip
 type layerTwo<T> = layerTwo<T>;
 ```
 
-Defined in: [src/conditional-types.ts:116](https://github.com/mulekick/typescript-launchpad/blob/c0b6d4936626de1a5b2131409fb7a742a1fc6661/src/conditional-types.ts#L116)
+Defined in: [src/conditional-types.ts:116](https://github.com/mulekick/typescript-launchpad/blob/9d275799f8527fc70e0bd68e70215a77833b0104/src/conditional-types.ts#L116)
 
 "Outer" type wrapper
 
@@ -177,7 +183,7 @@ Defined in: [src/conditional-types.ts:116](https://github.com/mulekick/typescrip
 type unwrap<T> = unwrap<T>;
 ```
 
-Defined in: [src/conditional-types.ts:131](https://github.com/mulekick/typescript-launchpad/blob/c0b6d4936626de1a5b2131409fb7a742a1fc6661/src/conditional-types.ts#L131)
+Defined in: [src/conditional-types.ts:131](https://github.com/mulekick/typescript-launchpad/blob/9d275799f8527fc70e0bd68e70215a77833b0104/src/conditional-types.ts#L131)
 
 Unwrapping of nested types.
 
@@ -189,7 +195,7 @@ Unwrapping of nested types.
 
 #### Remarks
 
-- Unwrap nested types using `infer` and conditionals.
+* Unwrap nested types using `infer` and conditionals.
 
 ***
 
@@ -199,7 +205,7 @@ Unwrapping of nested types.
 type impossibleType<T> = impossibleType<T>;
 ```
 
-Defined in: [src/conditional-types.ts:147](https://github.com/mulekick/typescript-launchpad/blob/c0b6d4936626de1a5b2131409fb7a742a1fc6661/src/conditional-types.ts#L147)
+Defined in: [src/conditional-types.ts:147](https://github.com/mulekick/typescript-launchpad/blob/9d275799f8527fc70e0bd68e70215a77833b0104/src/conditional-types.ts#L147)
 
 Using generic type with inferred type.
 
@@ -211,8 +217,8 @@ Using generic type with inferred type.
 
 #### Remarks
 
-- Returned types for constrained (shapeIfString) do not match supported types for typeNarrowing (objectShape | string).
-- As a result, any type created from this generic evaluates to never.
+* Returned types for constrained (shapeIfString) do not match supported types for typeNarrowing (objectShape | string).
+* As a result, any type created from this generic evaluates to never.
 
 ## 3. Distributed types
 
@@ -222,7 +228,7 @@ Using generic type with inferred type.
 type NonDistributive<T> = NonDistributive<T>;
 ```
 
-Defined in: [src/conditional-types.ts:170](https://github.com/mulekick/typescript-launchpad/blob/c0b6d4936626de1a5b2131409fb7a742a1fc6661/src/conditional-types.ts#L170)
+Defined in: [src/conditional-types.ts:170](https://github.com/mulekick/typescript-launchpad/blob/9d275799f8527fc70e0bd68e70215a77833b0104/src/conditional-types.ts#L170)
 
 Use an union type with a generic type
 
@@ -240,7 +246,7 @@ Use an union type with a generic type
 type Distributive<T> = Distributive<T>;
 ```
 
-Defined in: [src/conditional-types.ts:177](https://github.com/mulekick/typescript-launchpad/blob/c0b6d4936626de1a5b2131409fb7a742a1fc6661/src/conditional-types.ts#L177)
+Defined in: [src/conditional-types.ts:177](https://github.com/mulekick/typescript-launchpad/blob/9d275799f8527fc70e0bd68e70215a77833b0104/src/conditional-types.ts#L177)
 
 Distribute a generic type over a union of types
 
@@ -258,6 +264,6 @@ Distribute a generic type over a union of types
 const one: NonDistributive<string | symbol>;
 ```
 
-Defined in: [src/conditional-types.ts:183](https://github.com/mulekick/typescript-launchpad/blob/c0b6d4936626de1a5b2131409fb7a742a1fc6661/src/conditional-types.ts#L183)
+Defined in: [src/conditional-types.ts:183](https://github.com/mulekick/typescript-launchpad/blob/9d275799f8527fc70e0bd68e70215a77833b0104/src/conditional-types.ts#L183)
 
 Non- distributive : each array element is a union of types

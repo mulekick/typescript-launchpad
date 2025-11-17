@@ -15,7 +15,7 @@
         "name": "markdown",
         "path": "./docs"
     }],
-    "plugin": ["typedoc-plugin-markdown"],
+    "plugin": ["typedoc-plugin-markdown", "typedoc-plugin-remark"],
     // plugin specific
     "outputFileStrategy": "modules",
     "expandObjects": true,
@@ -31,5 +31,22 @@
         "source-order"
     ],
     // skip type checking
-    "skipErrorChecking": true
+    "skipErrorChecking": true,
+    // TOC
+    "remarkPlugins": [{
+        "applyTo": "*",
+        "plugins": [
+            ["remark-insert-headings", {
+                "text": "Table of contents",
+                "position": "start",
+                "minHeadingCount": 2
+            
+            }],
+            ["remark-toc", {
+                "ordered": false,
+                "tight": true,
+                "maxDepth": 2
+            }]
+        ]
+    }]
 }
