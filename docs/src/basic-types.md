@@ -18,7 +18,7 @@ Basic types.
 
 ### objectShape
 
-Defined in: [src/basic-types.ts:18](https://github.com/mulekick/typescript-launchpad/blob/9d275799f8527fc70e0bd68e70215a77833b0104/src/basic-types.ts#L18)
+Defined in: [src/basic-types.ts:18](https://github.com/mulekick/typescript-launchpad/blob/b15506df2d82d49328ac46657117606fe4ed18b8/src/basic-types.ts#L18)
 
 Simple interface
 
@@ -35,16 +35,16 @@ Simple interface
 
 | Property | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="one"></a> `one` | `string` | [src/basic-types.ts:19](https://github.com/mulekick/typescript-launchpad/blob/9d275799f8527fc70e0bd68e70215a77833b0104/src/basic-types.ts#L19) |
-| <a id="two"></a> `two?` | `number` | [src/basic-types.ts:20](https://github.com/mulekick/typescript-launchpad/blob/9d275799f8527fc70e0bd68e70215a77833b0104/src/basic-types.ts#L20) |
-| <a id="three"></a> `three` | (`s`) => `number` | [src/basic-types.ts:21](https://github.com/mulekick/typescript-launchpad/blob/9d275799f8527fc70e0bd68e70215a77833b0104/src/basic-types.ts#L21) |
-| <a id="four"></a> `four` | (`s`) => `string` | [src/basic-types.ts:22](https://github.com/mulekick/typescript-launchpad/blob/9d275799f8527fc70e0bd68e70215a77833b0104/src/basic-types.ts#L22) |
+| <a id="one"></a> `one` | `string` | [src/basic-types.ts:19](https://github.com/mulekick/typescript-launchpad/blob/b15506df2d82d49328ac46657117606fe4ed18b8/src/basic-types.ts#L19) |
+| <a id="two"></a> `two?` | `number` | [src/basic-types.ts:20](https://github.com/mulekick/typescript-launchpad/blob/b15506df2d82d49328ac46657117606fe4ed18b8/src/basic-types.ts#L20) |
+| <a id="three"></a> `three` | (`s`) => `number` | [src/basic-types.ts:21](https://github.com/mulekick/typescript-launchpad/blob/b15506df2d82d49328ac46657117606fe4ed18b8/src/basic-types.ts#L21) |
+| <a id="four"></a> `four` | (`s`) => `string` | [src/basic-types.ts:22](https://github.com/mulekick/typescript-launchpad/blob/b15506df2d82d49328ac46657117606fe4ed18b8/src/basic-types.ts#L22) |
 
 ***
 
 ### extendedShape
 
-Defined in: [src/basic-types.ts:34](https://github.com/mulekick/typescript-launchpad/blob/9d275799f8527fc70e0bd68e70215a77833b0104/src/basic-types.ts#L34)
+Defined in: [src/basic-types.ts:34](https://github.com/mulekick/typescript-launchpad/blob/b15506df2d82d49328ac46657117606fe4ed18b8/src/basic-types.ts#L34)
 
 Extended interface
 
@@ -62,11 +62,11 @@ Extended interface
 
 | Property | Modifier | Type | Inherited from | Defined in |
 | ------ | ------ | ------ | ------ | ------ |
-| <a id="one-1"></a> `one` | `public` | `string` | [`objectShape`](#objectshape).[`one`](#one) | [src/basic-types.ts:19](https://github.com/mulekick/typescript-launchpad/blob/9d275799f8527fc70e0bd68e70215a77833b0104/src/basic-types.ts#L19) |
-| <a id="two-1"></a> `two?` | `public` | `number` | [`objectShape`](#objectshape).[`two`](#two) | [src/basic-types.ts:20](https://github.com/mulekick/typescript-launchpad/blob/9d275799f8527fc70e0bd68e70215a77833b0104/src/basic-types.ts#L20) |
-| <a id="three-1"></a> `three` | `public` | (`s`) => `number` | [`objectShape`](#objectshape).[`three`](#three) | [src/basic-types.ts:21](https://github.com/mulekick/typescript-launchpad/blob/9d275799f8527fc70e0bd68e70215a77833b0104/src/basic-types.ts#L21) |
-| <a id="four-1"></a> `four` | `public` | (`s`) => `string` | [`objectShape`](#objectshape).[`four`](#four) | [src/basic-types.ts:22](https://github.com/mulekick/typescript-launchpad/blob/9d275799f8527fc70e0bd68e70215a77833b0104/src/basic-types.ts#L22) |
-| <a id="five"></a> `five` | `readonly` | `symbol` | - | [src/basic-types.ts:35](https://github.com/mulekick/typescript-launchpad/blob/9d275799f8527fc70e0bd68e70215a77833b0104/src/basic-types.ts#L35) |
+| <a id="one-1"></a> `one` | `public` | `string` | [`objectShape`](#objectshape).[`one`](#one) | [src/basic-types.ts:19](https://github.com/mulekick/typescript-launchpad/blob/b15506df2d82d49328ac46657117606fe4ed18b8/src/basic-types.ts#L19) |
+| <a id="two-1"></a> `two?` | `public` | `number` | [`objectShape`](#objectshape).[`two`](#two) | [src/basic-types.ts:20](https://github.com/mulekick/typescript-launchpad/blob/b15506df2d82d49328ac46657117606fe4ed18b8/src/basic-types.ts#L20) |
+| <a id="three-1"></a> `three` | `public` | (`s`) => `number` | [`objectShape`](#objectshape).[`three`](#three) | [src/basic-types.ts:21](https://github.com/mulekick/typescript-launchpad/blob/b15506df2d82d49328ac46657117606fe4ed18b8/src/basic-types.ts#L21) |
+| <a id="four-1"></a> `four` | `public` | (`s`) => `string` | [`objectShape`](#objectshape).[`four`](#four) | [src/basic-types.ts:22](https://github.com/mulekick/typescript-launchpad/blob/b15506df2d82d49328ac46657117606fe4ed18b8/src/basic-types.ts#L22) |
+| <a id="five"></a> `five` | `readonly` | `symbol` | - | [src/basic-types.ts:35](https://github.com/mulekick/typescript-launchpad/blob/b15506df2d82d49328ac46657117606fe4ed18b8/src/basic-types.ts#L35) |
 
 ***
 
@@ -76,7 +76,7 @@ Extended interface
 type extendedType = extendedType;
 ```
 
-Defined in: [src/basic-types.ts:46](https://github.com/mulekick/typescript-launchpad/blob/9d275799f8527fc70e0bd68e70215a77833b0104/src/basic-types.ts#L46)
+Defined in: [src/basic-types.ts:46](https://github.com/mulekick/typescript-launchpad/blob/b15506df2d82d49328ac46657117606fe4ed18b8/src/basic-types.ts#L46)
 
 Extended type
 
@@ -89,7 +89,7 @@ Extended type
 
 ### derivedShape
 
-Defined in: [src/basic-types.ts:57](https://github.com/mulekick/typescript-launchpad/blob/9d275799f8527fc70e0bd68e70215a77833b0104/src/basic-types.ts#L57)
+Defined in: [src/basic-types.ts:57](https://github.com/mulekick/typescript-launchpad/blob/b15506df2d82d49328ac46657117606fe4ed18b8/src/basic-types.ts#L57)
 
 Create interface from implementation
 
@@ -105,10 +105,10 @@ Create interface from implementation
 
 | Property | Modifier | Type | Inherited from | Defined in |
 | ------ | ------ | ------ | ------ | ------ |
-| <a id="five-1"></a> `five` | `readonly` | `symbol` | - | [src/basic-types.ts:58](https://github.com/mulekick/typescript-launchpad/blob/9d275799f8527fc70e0bd68e70215a77833b0104/src/basic-types.ts#L58) |
-| <a id="one-2"></a> `one` | `public` | `string` | [`objectClass`](#objectclass).[`one`](#one-3) | [src/basic-types.ts:101](https://github.com/mulekick/typescript-launchpad/blob/9d275799f8527fc70e0bd68e70215a77833b0104/src/basic-types.ts#L101) |
-| <a id="two-2"></a> `two` | `public` | `number` | [`objectClass`](#objectclass).[`two`](#two-3) | [src/basic-types.ts:102](https://github.com/mulekick/typescript-launchpad/blob/9d275799f8527fc70e0bd68e70215a77833b0104/src/basic-types.ts#L102) |
-| <a id="three-2"></a> `three` | `public` | (`s`) => `number` | [`objectClass`](#objectclass).[`three`](#three-3) | [src/basic-types.ts:103](https://github.com/mulekick/typescript-launchpad/blob/9d275799f8527fc70e0bd68e70215a77833b0104/src/basic-types.ts#L103) |
+| <a id="five-1"></a> `five` | `readonly` | `symbol` | - | [src/basic-types.ts:58](https://github.com/mulekick/typescript-launchpad/blob/b15506df2d82d49328ac46657117606fe4ed18b8/src/basic-types.ts#L58) |
+| <a id="one-2"></a> `one` | `public` | `string` | [`objectClass`](#objectclass).[`one`](#one-3) | [src/basic-types.ts:101](https://github.com/mulekick/typescript-launchpad/blob/b15506df2d82d49328ac46657117606fe4ed18b8/src/basic-types.ts#L101) |
+| <a id="two-2"></a> `two` | `public` | `number` | [`objectClass`](#objectclass).[`two`](#two-3) | [src/basic-types.ts:102](https://github.com/mulekick/typescript-launchpad/blob/b15506df2d82d49328ac46657117606fe4ed18b8/src/basic-types.ts#L102) |
+| <a id="three-2"></a> `three` | `public` | (`s`) => `number` | [`objectClass`](#objectclass).[`three`](#three-3) | [src/basic-types.ts:103](https://github.com/mulekick/typescript-launchpad/blob/b15506df2d82d49328ac46657117606fe4ed18b8/src/basic-types.ts#L103) |
 
 #### Methods
 
@@ -118,7 +118,7 @@ Create interface from implementation
 four(s): string;
 ```
 
-Defined in: [src/basic-types.ts:110](https://github.com/mulekick/typescript-launchpad/blob/9d275799f8527fc70e0bd68e70215a77833b0104/src/basic-types.ts#L110)
+Defined in: [src/basic-types.ts:110](https://github.com/mulekick/typescript-launchpad/blob/b15506df2d82d49328ac46657117606fe4ed18b8/src/basic-types.ts#L110)
 
 ###### Parameters
 
@@ -142,7 +142,7 @@ Defined in: [src/basic-types.ts:110](https://github.com/mulekick/typescript-laun
 const objectLiteral: objectShape;
 ```
 
-Defined in: [src/basic-types.ts:67](https://github.com/mulekick/typescript-launchpad/blob/9d275799f8527fc70e0bd68e70215a77833b0104/src/basic-types.ts#L67)
+Defined in: [src/basic-types.ts:67](https://github.com/mulekick/typescript-launchpad/blob/b15506df2d82d49328ac46657117606fe4ed18b8/src/basic-types.ts#L67)
 
 Simple object literal
 
@@ -158,7 +158,7 @@ Simple object literal
 const derivedLiteral: derivedShape;
 ```
 
-Defined in: [src/basic-types.ts:80](https://github.com/mulekick/typescript-launchpad/blob/9d275799f8527fc70e0bd68e70215a77833b0104/src/basic-types.ts#L80)
+Defined in: [src/basic-types.ts:80](https://github.com/mulekick/typescript-launchpad/blob/b15506df2d82d49328ac46657117606fe4ed18b8/src/basic-types.ts#L80)
 
 Derived object literal
 
@@ -170,7 +170,7 @@ Derived object literal
 
 ### objectClass
 
-Defined in: [src/basic-types.ts:100](https://github.com/mulekick/typescript-launchpad/blob/9d275799f8527fc70e0bd68e70215a77833b0104/src/basic-types.ts#L100)
+Defined in: [src/basic-types.ts:100](https://github.com/mulekick/typescript-launchpad/blob/b15506df2d82d49328ac46657117606fe4ed18b8/src/basic-types.ts#L100)
 
 Simple class
 
@@ -200,7 +200,7 @@ Simple class
 new objectClass(): objectClass;
 ```
 
-Defined in: [src/basic-types.ts:104](https://github.com/mulekick/typescript-launchpad/blob/9d275799f8527fc70e0bd68e70215a77833b0104/src/basic-types.ts#L104)
+Defined in: [src/basic-types.ts:104](https://github.com/mulekick/typescript-launchpad/blob/b15506df2d82d49328ac46657117606fe4ed18b8/src/basic-types.ts#L104)
 
 ###### Returns
 
@@ -210,9 +210,9 @@ Defined in: [src/basic-types.ts:104](https://github.com/mulekick/typescript-laun
 
 | Property | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="one-3"></a> `one` | `string` | [src/basic-types.ts:101](https://github.com/mulekick/typescript-launchpad/blob/9d275799f8527fc70e0bd68e70215a77833b0104/src/basic-types.ts#L101) |
-| <a id="two-3"></a> `two` | `number` | [src/basic-types.ts:102](https://github.com/mulekick/typescript-launchpad/blob/9d275799f8527fc70e0bd68e70215a77833b0104/src/basic-types.ts#L102) |
-| <a id="three-3"></a> `three` | (`s`) => `number` | [src/basic-types.ts:103](https://github.com/mulekick/typescript-launchpad/blob/9d275799f8527fc70e0bd68e70215a77833b0104/src/basic-types.ts#L103) |
+| <a id="one-3"></a> `one` | `string` | [src/basic-types.ts:101](https://github.com/mulekick/typescript-launchpad/blob/b15506df2d82d49328ac46657117606fe4ed18b8/src/basic-types.ts#L101) |
+| <a id="two-3"></a> `two` | `number` | [src/basic-types.ts:102](https://github.com/mulekick/typescript-launchpad/blob/b15506df2d82d49328ac46657117606fe4ed18b8/src/basic-types.ts#L102) |
+| <a id="three-3"></a> `three` | (`s`) => `number` | [src/basic-types.ts:103](https://github.com/mulekick/typescript-launchpad/blob/b15506df2d82d49328ac46657117606fe4ed18b8/src/basic-types.ts#L103) |
 
 #### Methods
 
@@ -222,7 +222,7 @@ Defined in: [src/basic-types.ts:104](https://github.com/mulekick/typescript-laun
 four(s): string;
 ```
 
-Defined in: [src/basic-types.ts:110](https://github.com/mulekick/typescript-launchpad/blob/9d275799f8527fc70e0bd68e70215a77833b0104/src/basic-types.ts#L110)
+Defined in: [src/basic-types.ts:110](https://github.com/mulekick/typescript-launchpad/blob/b15506df2d82d49328ac46657117606fe4ed18b8/src/basic-types.ts#L110)
 
 ###### Parameters
 
@@ -242,7 +242,7 @@ Defined in: [src/basic-types.ts:110](https://github.com/mulekick/typescript-laun
 
 ### derivedClass
 
-Defined in: [src/basic-types.ts:124](https://github.com/mulekick/typescript-launchpad/blob/9d275799f8527fc70e0bd68e70215a77833b0104/src/basic-types.ts#L124)
+Defined in: [src/basic-types.ts:124](https://github.com/mulekick/typescript-launchpad/blob/b15506df2d82d49328ac46657117606fe4ed18b8/src/basic-types.ts#L124)
 
 Derived class
 
@@ -268,7 +268,7 @@ Derived class
 new derivedClass(): derivedClass;
 ```
 
-Defined in: [src/basic-types.ts:126](https://github.com/mulekick/typescript-launchpad/blob/9d275799f8527fc70e0bd68e70215a77833b0104/src/basic-types.ts#L126)
+Defined in: [src/basic-types.ts:126](https://github.com/mulekick/typescript-launchpad/blob/b15506df2d82d49328ac46657117606fe4ed18b8/src/basic-types.ts#L126)
 
 ###### Returns
 
@@ -282,10 +282,10 @@ Defined in: [src/basic-types.ts:126](https://github.com/mulekick/typescript-laun
 
 | Property | Type | Inherited from | Defined in |
 | ------ | ------ | ------ | ------ |
-| <a id="one-4"></a> `one` | `string` | [`extendedShape`](#extendedshape).[`one`](#one-1) [`objectClass`](#objectclass).[`one`](#one-3) | [src/basic-types.ts:101](https://github.com/mulekick/typescript-launchpad/blob/9d275799f8527fc70e0bd68e70215a77833b0104/src/basic-types.ts#L101) |
-| <a id="two-4"></a> `two` | `number` | [`extendedShape`](#extendedshape).[`two`](#two-1) [`objectClass`](#objectclass).[`two`](#two-3) | [src/basic-types.ts:102](https://github.com/mulekick/typescript-launchpad/blob/9d275799f8527fc70e0bd68e70215a77833b0104/src/basic-types.ts#L102) |
-| <a id="three-4"></a> `three` | (`s`) => `number` | [`extendedShape`](#extendedshape).[`three`](#three-1) [`objectClass`](#objectclass).[`three`](#three-3) | [src/basic-types.ts:103](https://github.com/mulekick/typescript-launchpad/blob/9d275799f8527fc70e0bd68e70215a77833b0104/src/basic-types.ts#L103) |
-| <a id="five-2"></a> `five` | `symbol` | - | [src/basic-types.ts:125](https://github.com/mulekick/typescript-launchpad/blob/9d275799f8527fc70e0bd68e70215a77833b0104/src/basic-types.ts#L125) |
+| <a id="one-4"></a> `one` | `string` | [`extendedShape`](#extendedshape).[`one`](#one-1) [`objectClass`](#objectclass).[`one`](#one-3) | [src/basic-types.ts:101](https://github.com/mulekick/typescript-launchpad/blob/b15506df2d82d49328ac46657117606fe4ed18b8/src/basic-types.ts#L101) |
+| <a id="two-4"></a> `two` | `number` | [`extendedShape`](#extendedshape).[`two`](#two-1) [`objectClass`](#objectclass).[`two`](#two-3) | [src/basic-types.ts:102](https://github.com/mulekick/typescript-launchpad/blob/b15506df2d82d49328ac46657117606fe4ed18b8/src/basic-types.ts#L102) |
+| <a id="three-4"></a> `three` | (`s`) => `number` | [`extendedShape`](#extendedshape).[`three`](#three-1) [`objectClass`](#objectclass).[`three`](#three-3) | [src/basic-types.ts:103](https://github.com/mulekick/typescript-launchpad/blob/b15506df2d82d49328ac46657117606fe4ed18b8/src/basic-types.ts#L103) |
+| <a id="five-2"></a> `five` | `symbol` | - | [src/basic-types.ts:125](https://github.com/mulekick/typescript-launchpad/blob/b15506df2d82d49328ac46657117606fe4ed18b8/src/basic-types.ts#L125) |
 
 #### Methods
 
@@ -295,7 +295,7 @@ Defined in: [src/basic-types.ts:126](https://github.com/mulekick/typescript-laun
 four(s): string;
 ```
 
-Defined in: [src/basic-types.ts:131](https://github.com/mulekick/typescript-launchpad/blob/9d275799f8527fc70e0bd68e70215a77833b0104/src/basic-types.ts#L131)
+Defined in: [src/basic-types.ts:131](https://github.com/mulekick/typescript-launchpad/blob/b15506df2d82d49328ac46657117606fe4ed18b8/src/basic-types.ts#L131)
 
 ###### Parameters
 
@@ -326,7 +326,7 @@ const literal: {
 };
 ```
 
-Defined in: [src/basic-types.ts:148](https://github.com/mulekick/typescript-launchpad/blob/9d275799f8527fc70e0bd68e70215a77833b0104/src/basic-types.ts#L148)
+Defined in: [src/basic-types.ts:148](https://github.com/mulekick/typescript-launchpad/blob/b15506df2d82d49328ac46657117606fe4ed18b8/src/basic-types.ts#L148)
 
 Create literal type from implementation
 
@@ -334,8 +334,8 @@ Create literal type from implementation
 
 | Name | Type | Default value | Defined in |
 | ------ | ------ | ------ | ------ |
-| <a id="a"></a> `a` | `0` | `0` | [src/basic-types.ts:148](https://github.com/mulekick/typescript-launchpad/blob/9d275799f8527fc70e0bd68e70215a77833b0104/src/basic-types.ts#L148) |
-| <a id="b"></a> `b` | `"union"` | - | [src/basic-types.ts:148](https://github.com/mulekick/typescript-launchpad/blob/9d275799f8527fc70e0bd68e70215a77833b0104/src/basic-types.ts#L148) |
+| <a id="a"></a> `a` | `0` | `0` | [src/basic-types.ts:148](https://github.com/mulekick/typescript-launchpad/blob/b15506df2d82d49328ac46657117606fe4ed18b8/src/basic-types.ts#L148) |
+| <a id="b"></a> `b` | `"union"` | - | [src/basic-types.ts:148](https://github.com/mulekick/typescript-launchpad/blob/b15506df2d82d49328ac46657117606fe4ed18b8/src/basic-types.ts#L148) |
 
 #### Remarks
 

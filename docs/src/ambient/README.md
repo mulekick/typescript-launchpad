@@ -30,7 +30,7 @@ Ambient module declaration.
 
 ### ambientShape
 
-Defined in: [src/ambient.d.ts:14](https://github.com/mulekick/typescript-launchpad/blob/9d275799f8527fc70e0bd68e70215a77833b0104/src/ambient.d.ts#L14)
+Defined in: [src/ambient.d.ts:14](https://github.com/mulekick/typescript-launchpad/blob/b15506df2d82d49328ac46657117606fe4ed18b8/src/ambient.d.ts#L14)
 
 Declare interface
 
@@ -38,6 +38,6 @@ Declare interface
 
 | Property | Type | Defined in |
 | ------ | ------ | ------ |
-| <a id="one"></a> `one` | `string` | [src/ambient.d.ts:15](https://github.com/mulekick/typescript-launchpad/blob/9d275799f8527fc70e0bd68e70215a77833b0104/src/ambient.d.ts#L15) |
-| <a id="two"></a> `two` | () => `string` | [src/ambient.d.ts:16](https://github.com/mulekick/typescript-launchpad/blob/9d275799f8527fc70e0bd68e70215a77833b0104/src/ambient.d.ts#L16) |
-| <a id="three"></a> `three` | `Promise`<`string`> | [src/ambient.d.ts:17](https://github.com/mulekick/typescript-launchpad/blob/9d275799f8527fc70e0bd68e70215a77833b0104/src/ambient.d.ts#L17) |
+| <a id="one"></a> `one` | `string` | [src/ambient.d.ts:15](https://github.com/mulekick/typescript-launchpad/blob/b15506df2d82d49328ac46657117606fe4ed18b8/src/ambient.d.ts#L15) |
+| <a id="two"></a> `two` | () => `string` | [src/ambient.d.ts:16](https://github.com/mulekick/typescript-launchpad/blob/b15506df2d82d49328ac46657117606fe4ed18b8/src/ambient.d.ts#L16) |
+| <a id="three"></a> `three` | `Promise`<`string`> | [src/ambient.d.ts:17](https://github.com/mulekick/typescript-launchpad/blob/b15506df2d82d49328ac46657117606fe4ed18b8/src/ambient.d.ts#L17) |

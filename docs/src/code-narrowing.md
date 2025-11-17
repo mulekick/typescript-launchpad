@@ -22,7 +22,7 @@ Code narrowing.
 function whichPrimitiveType(v): string;
 ```
 
-Defined in: [src/code-narrowing.ts:26](https://github.com/mulekick/typescript-launchpad/blob/9d275799f8527fc70e0bd68e70215a77833b0104/src/code-narrowing.ts#L26)
+Defined in: [src/code-narrowing.ts:26](https://github.com/mulekick/typescript-launchpad/blob/b15506df2d82d49328ac46657117606fe4ed18b8/src/code-narrowing.ts#L26)
 
 `typeof` and `instanceof` based narrowing
 
@@ -49,7 +49,7 @@ Defined in: [src/code-narrowing.ts:26](https://github.com/mulekick/typescript-la
 function isExtended(o): o is extendedShape;
 ```
 
-Defined in: [src/code-narrowing.ts:59](https://github.com/mulekick/typescript-launchpad/blob/9d275799f8527fc70e0bd68e70215a77833b0104/src/code-narrowing.ts#L59)
+Defined in: [src/code-narrowing.ts:59](https://github.com/mulekick/typescript-launchpad/blob/b15506df2d82d49328ac46657117606fe4ed18b8/src/code-narrowing.ts#L59)
 
 Type predicate
 
@@ -76,7 +76,7 @@ Type predicate
 function runPredicate(o): symbol;
 ```
 
-Defined in: [src/code-narrowing.ts:73](https://github.com/mulekick/typescript-launchpad/blob/9d275799f8527fc70e0bd68e70215a77833b0104/src/code-narrowing.ts#L73)
+Defined in: [src/code-narrowing.ts:73](https://github.com/mulekick/typescript-launchpad/blob/b15506df2d82d49328ac46657117606fe4ed18b8/src/code-narrowing.ts#L73)
 
 Narrowing with predicate
 
@@ -106,7 +106,7 @@ Narrowing with predicate
 function processEvent(o): string;
 ```
 
-Defined in: [src/code-narrowing.ts:88](https://github.com/mulekick/typescript-launchpad/blob/9d275799f8527fc70e0bd68e70215a77833b0104/src/code-narrowing.ts#L88)
+Defined in: [src/code-narrowing.ts:88](https://github.com/mulekick/typescript-launchpad/blob/b15506df2d82d49328ac46657117606fe4ed18b8/src/code-narrowing.ts#L88)
 
 Narrowing with discriminated unions
 
