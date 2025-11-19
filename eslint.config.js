@@ -1,8 +1,8 @@
+/* eslint-disable import/no-unresolved */
 import muleslint from "@mulekick/eslint-config-muleslint";
-// eslint-disable-next-line import/no-unresolved, n/no-extraneous-import
-import typescript from "typescript-eslint";
+import {defineConfig} from 'eslint/config';
 
 // .eslintignore doesn't work with flat configs
-export default typescript.config(...muleslint, {
+export default defineConfig(...muleslint, {
     ignores: [ `**/node_modules/**`, `**/dist/**`, `**/build/**` ]
 });

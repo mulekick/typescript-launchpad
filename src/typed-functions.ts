@@ -29,7 +29,7 @@ import type {event} from "./composed-types.ts";
  * - Function signatures are declared using **_function type expressions_**.
  * - Static typing consistency will be checked for implementations at the codebase level.
  */
-export type basicFn = (x: derivedClass)=> number;
+export type basicFn = (x: derivedClass) => number;
 
 /**
  * Typed function implementation
@@ -45,7 +45,7 @@ export const basic: basicFn = function(x) {
  * Function accepting an union type
  * @category 1. Function type expressions
  */
-export type restrictedFn = (v: `union` | `type`)=> string;
+export type restrictedFn = (v: `union` | `type`) => string;
 
 /**
  * Pass a literal type as an argument
@@ -141,7 +141,7 @@ export function processEventWithDate(one: string | number | event, two?: Date): 
  * - The implementation is responsible for providing the actual value for `this` (see below).
  * - Note: typescript supports a special [`this` type](https://www.typescriptlang.org/docs/handbook/2/classes.html#this-types) for annotations as well.
  */
-export type doItUsingThis = (this: objectShape | extendedShape, value: string)=> number;
+export type doItUsingThis = (this: objectShape | extendedShape, value: string) => number;
 
 /**
  * Type annotations for `this`.
@@ -165,7 +165,7 @@ export const inferredAgain: number = returnLength.bind(createObject(Math.random(
  * Generic function type expression with rest parameters.
  * @category 5. Rest parameters and arguments
  */
-export type restParamsFn<T> = (one: T, two: T, ...three: Array<T>)=> string;
+export type restParamsFn<T> = (one: T, two: T, ...three: Array<T>) => string;
 
 /**
  * Implementation using typed rest parameters.
@@ -184,7 +184,7 @@ export const fnAcceptRestParams: restParamsFn<number | {prop: number}> = (one, t
  * @hidden
  * @category 5. Rest parameters and arguments
  */
-export type restArgsFn<T> = ()=> Array<T>;
+export type restArgsFn<T> = () => Array<T>;
 
 /**
  * @hidden
@@ -216,7 +216,7 @@ export const variadic: string = fnAcceptRestParams(...arrayAsTuple, ...fnCreateA
  * @remarks
  * - There's a difference between using `void` as a return type in a function type expression vs as an annotation.
  */
-export type voidFn = ()=> void;
+export type voidFn = () => void;
 
 /**
  * `void` as a return type annotation

@@ -18,8 +18,8 @@
 export interface objectShape {
     one: string;
     two?: number;
-    three: (s: string)=> number;
-    four: (s: string)=> string;
+    three: (s: string) => number;
+    four: (s: string) => string;
 }
 
 /**
@@ -100,7 +100,7 @@ export const derivedLiteral: derivedShape = {
 export class objectClass implements objectShape {
     one: string;
     two: number;
-    three: (s: string)=> number;
+    three: (s: string) => number;
     constructor() {
         this.one = `value`;
         this.two = 0;

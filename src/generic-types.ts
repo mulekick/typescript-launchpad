@@ -74,7 +74,7 @@ export const f: InstanceType<typeof genericClass<number>> = new genericClass<num
  * - The same result can be achieved with interfaces, however types are preferred.
  * - Note : _it is not possible to create generic enums and namespaces_.
  */
-export type genericFn<T, U> = (a: T, b: U)=> [U, T];
+export type genericFn<T, U> = (a: T, b: U) => [U, T];
 
 /**
  * Function implementation using a generic
@@ -113,7 +113,7 @@ export const alsoGeneric: interfaceFn<string, number> = function(a, b) {
  * @remarks
  * - Equivalent of `type constrainedFn<T> = T extends objectShape ? (o: T)=> string : never;`, which one is better is debatable.
  */
-export type constrainedFn<T extends objectShape> = (o: T)=> string;
+export type constrainedFn<T extends objectShape> = (o: T) => string;
 
 /**
  * Constrained function implementation and typing.

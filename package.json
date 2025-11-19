@@ -9,22 +9,22 @@
         "typecheck": "npx tsc --noEmit --emitDeclarationOnly false && echo \"type checking was successful\"",
         "lint": "npx eslint .",
         "types:build": "npx tsc --noEmit false --emitDeclarationOnly true --noEmitOnError false",
-        "build": "npx babel src --extensions \".ts\" --out-dir \"build\" --ignore \"src/compiler-checks.ts\",\"**/*.d.ts\" --verbose",
+        "build": "npx babel src --extensions \".ts\" --out-dir \"dist\" --ignore \"src/compiler-checks.ts\",\"**/*.d.ts\" --verbose",
         "docs:build": "npx typedoc"
     },
     "dependencies": {
-        "core-js": "^3.46.0"
+        "core-js": "^3.47.0"
     },
     "devDependencies": {
         "@babel/cli": "^7.28.3",
         "@babel/core": "^7.28.5",
         "@babel/preset-env": "^7.28.5",
         "@babel/preset-typescript": "^7.28.5",
-        "@mulekick/eslint-config-muleslint": "^2.2.3",
-        "@types/node": "^24.9.2",
+        "@mulekick/eslint-config-muleslint": "^2.3.2",
+        "@types/node": "^24.10.1",
         "babel-plugin-transform-import-meta": "^2.3.3",
-        "eslint": "^9.38.0",
-        "globals": "^16.4.0",
+        "eslint": "^9.39.1",
+        "globals": "^16.5.0",
         "remark-insert-headings": "^0.0.0",
         "remark-toc": "^9.0.0",
         "tsx": "^4.20.6",

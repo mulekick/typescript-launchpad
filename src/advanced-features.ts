@@ -108,7 +108,7 @@ export type greeting = `hey ${ joe }`;
  * - Index signatures expand over array objects since element indexation is possible using [different types](https://www.typescriptlang.org/docs/handbook/2/objects.html#index-signatures).
  * - However, this is an extremely strange pattern and I guess that arrays, maps and objects are sufficient in most cases.
  */
-export type objectDictFn = ()=> {
+export type objectDictFn = () => {
     [index: number]: objectShape | extendedShape;
     length: number;
 };

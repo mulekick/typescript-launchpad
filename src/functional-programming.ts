@@ -17,19 +17,19 @@ import {randomBytes} from "node:crypto";
  * Generic function type
  * @category 1. Function type expressions for higher order functions
  */
-export type TypedFunction<R extends Array<unknown>, T> = (...args: R)=> T;
+export type TypedFunction<R extends Array<unknown>, T> = (...args: R) => T;
 
 /**
  * Generic higher-order function type
  * @category 1. Function type expressions for higher order functions
  */
-export type PromisifyFunction<T> = T extends TypedFunction<infer Z, infer X> ? (fn: T)=> (...args: Z)=> Promise<Awaited<X>> : never;
+export type PromisifyFunction<T> = T extends TypedFunction<infer Z, infer X> ? (fn: T) => (...args: Z) => Promise<Awaited<X>> : never;
 
 /**
  * Another example
  * @category 1. Function type expressions for higher order functions
  */
-export type TimeExecution<T> = T extends TypedFunction<infer Z, infer X> ? (fn: T)=> (...args: Z)=> {duration: number; result: X} : never;
+export type TimeExecution<T> = T extends TypedFunction<infer Z, infer X> ? (fn: T) => (...args: Z) => {duration: number; result: X} : never;
 
 /**
  * Promisify sync function
@@ -38,7 +38,7 @@ export type TimeExecution<T> = T extends TypedFunction<infer Z, infer X> ? (fn: 
  * - This pattern allows for static typing of [hook-like functions](https://en.wikipedia.org/wiki/Hooking).
  * - The try / catch clause, promise resolution and rejection as well as parameter function call can be moved in any desired callback.
  */
-export const promisifySyncFn: PromisifyFunction<(...args: [string])=> string> = fn => (...args) => new Promise((resolve, reject) => {
+export const promisifySyncFn: PromisifyFunction<(...args: [string]) => string> = fn => (...args) => new Promise((resolve, reject) => {
     try {
         const result = fn(...args);
         resolve(result);
@@ -53,7 +53,7 @@ export const promisifySyncFn: PromisifyFunction<(...args: [string])=> string> = 
  * @remarks
  * - Same as the above using an async function type + async / await.
  */
-export const promisifyAsyncFn: PromisifyFunction<(...args: [number, number])=> Promise<number>> = fn => async(...args) => {
+export const promisifyAsyncFn: PromisifyFunction<(...args: [number, number]) => Promise<number>> = fn => async(...args) => {
     try {
         const result = await fn(...args);
         return result;
@@ -69,7 +69,7 @@ export const promisifyAsyncFn: PromisifyFunction<(...args: [number, number])=> P
  * - Hook-like higher order function that accepts a function as a parameter
  * - It returns the return type of the function along with the execution duration
  */
-export const timeExecutionHook: TimeExecution<(...args: [Array<string>])=> number> = fn => (...args) => {
+export const timeExecutionHook: TimeExecution<(...args: [Array<string>]) => number> = fn => (...args) => {
     const start = new Date().getTime();
     const result = fn(...args);
     const duration = new Date().getTime() - start;

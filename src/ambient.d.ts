@@ -13,7 +13,7 @@
  */
 interface ambientShape {
     one: string;
-    two: ()=> string;
+    two: () => string;
     three: Promise<string>;
 }
 

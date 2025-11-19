@@ -1,4 +1,4 @@
 # exclude node modules
 node_modules
 # exclude build
-build
+dist

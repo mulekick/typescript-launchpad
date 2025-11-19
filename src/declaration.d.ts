@@ -22,7 +22,7 @@ interface anotherShape {
  * Type declaration.
  * @useDeclaredType
  */
-type returnVoid = (a: string)=> string;
+type returnVoid = (a: string) => string;
 
 /**
  * Namespace declaration.
