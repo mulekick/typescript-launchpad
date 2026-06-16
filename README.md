@@ -85,14 +85,15 @@ The following `compilerOptions` keys need special attention :
   - See above.
 - `"maxNodeModuleJsDepth": 0`
   - See above.
-- [`"declarationMap": false`](https://www.typescriptlang.org/tsconfig/#declarationMap) :
+- [`"declarationMap": false`](https://www.typescriptlang.org/tsconfig/#declarationMap)
   - Opts out of generating [sourcemaps](https://firefox-source-docs.mozilla.org/devtools-user/debugger/how_to/use_a_source_map/index.html) since `tsx` natively supports debugging.
-- `"sourceMap": false` (see above).
-- [`"isolatedModules": true`](https://www.typescriptlang.org/tsconfig/#isolatedModules) :
+- `"sourceMap": false`
+  - See above.
+- [`"isolatedModules": true`](https://www.typescriptlang.org/tsconfig/#isolatedModules)
   - Ensures that `*.ts` code can be safely transpiled by external bundlers (`vite`, `babel` etc).
-- [`"verbatimModuleSyntax": true`](https://www.typescriptlang.org/tsconfig/#verbatimModuleSyntax) :
+- [`"verbatimModuleSyntax": true`](https://www.typescriptlang.org/tsconfig/#verbatimModuleSyntax)
   - Forces being specific about importing as a type versus importing as a value.
-- [`"allowSyntheticDefaultImports": true`](https://www.typescriptlang.org/tsconfig/#allowSyntheticDefaultImports) :
+- [`"allowSyntheticDefaultImports": true`](https://www.typescriptlang.org/tsconfig/#allowSyntheticDefaultImports)
   - Emulates a default export for modules that do not have one.
   - Also, `import * as X from "Y"` should never be used since it only imports **_own properties_** of exported values.
 - [`"skipLibCheck": false`](https://www.typescriptlang.org/tsconfig/#skipLibCheck)

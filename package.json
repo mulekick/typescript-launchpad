@@ -1,6 +1,6 @@
 {
     "name": "my-awesome-typescript-project",
-    "version": "1.0.1",
+    "version": "2.0.0",
     "private": true,
     "description": "Ready to use environment for running and building typescript code.",
     "type": "module",
@@ -13,29 +13,29 @@
         "docs:build": "npx typedoc"
     },
     "dependencies": {
-        "core-js": "^3.47.0"
+        "core-js": "^3.49.0"
     },
     "devDependencies": {
-        "@babel/cli": "^7.28.3",
-        "@babel/core": "^7.28.5",
-        "@babel/preset-env": "^7.28.5",
-        "@babel/preset-typescript": "^7.28.5",
-        "@mulekick/eslint-config-muleslint": "^2.3.2",
-        "@types/node": "^24.10.1",
+        "@babel/cli": "^7.29.7",
+        "@babel/core": "^7.29.7",
+        "@babel/preset-env": "^7.29.7",
+        "@babel/preset-typescript": "^7.29.7",
+        "@mulekick/eslint-config-muleslint": "^3.0.1",
+        "@types/node": "^25.9.3",
         "babel-plugin-transform-import-meta": "^2.3.3",
-        "eslint": "^9.39.1",
-        "globals": "^16.5.0",
-        "remark-insert-headings": "^0.0.0",
+        "eslint": "^9.39.4",
+        "globals": "^17.6.0",
+        "remark-insert-headings": "^1.0.0",
         "remark-toc": "^9.0.0",
-        "tsx": "^4.20.6",
-        "typedoc": "^0.28.14",
-        "typedoc-plugin-markdown": "^4.9.0",
+        "tsx": "^4.22.4",
+        "typedoc": "^0.28.19",
+        "typedoc-plugin-markdown": "^4.12.0",
         "typedoc-plugin-remark": "^2.0.1",
-        "typescript": "^5.9.3"
+        "typescript": "^6.0.3"
     },
     "engines": {
-        "node": ">=v22.15.0",
-        "npm": ">=11.3.0"
+        "node": ">=v24.16.0",
+        "npm": ">=11.17.0"
     },
     "os": [
         "linux"

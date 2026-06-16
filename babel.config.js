@@ -12,7 +12,7 @@ export default {
         } ],
         [ `@babel/preset-env`, {
             useBuiltIns: `usage`,
-            corejs: `3.40.0`
+            corejs: `3.49.0`
         } ]
     ],
     plugins: [ `babel-plugin-transform-import-meta` ]

@@ -26,25 +26,25 @@ import type {ecmaPrimitives, ecmaSpecialCases, event} from "./composed-types.ts"
 export const whichPrimitiveType = (v: ecmaPrimitives | ecmaSpecialCases): string => {
     let result = ``;
     switch (true) {
-    case typeof v === `string` :
-        result = `${ v } is a string`;
-        break;
-    case typeof v === `boolean` || typeof v === `undefined` :
-        result = `'${ String(v) }' is a ${ typeof v }`;
-        break;
-    case v === null :
-        result = `'${ String(v) }' is null`;
-        break;
-    case typeof v === `number` || typeof v === `bigint` || typeof v === `symbol` :
-        result = `'${ v.toString() }' is a ${ typeof v }`;
-        break;
-    case typeof v === `function` :
-        // eslint-disable-next-line @typescript-eslint/no-unsafe-call
-        result = `v is a callable function that returns ${ String(v()) }`;
-        break;
-    default :
-        result = `${ JSON.stringify(v) } is an object`;
-        break;
+        case typeof v === `string` :
+            result = `${ v } is a string`;
+            break;
+        case typeof v === `boolean` || typeof v === `undefined` :
+            result = `'${ String(v) }' is a ${ typeof v }`;
+            break;
+        case v === null :
+            result = `'${ String(v) }' is null`;
+            break;
+        case typeof v === `number` || typeof v === `bigint` || typeof v === `symbol` :
+            result = `'${ v.toString() }' is a ${ typeof v }`;
+            break;
+        case typeof v === `function` :
+            // eslint-disable-next-line @typescript-eslint/no-unsafe-call
+            result = `v is a callable function that returns ${ String(v()) }`;
+            break;
+        default :
+            result = `${ JSON.stringify(v) } is an object`;
+            break;
     }
     return result;
 };
@@ -87,11 +87,11 @@ export const runPredicate = (o: objectShape | extendedShape): symbol => {
  */
 export const processEvent = (o: event): string => {
     switch (o.eventType) {
-    case events.EVENT_SERVER :
-        return `processing event on server ${ String(o.serverId) }`;
-    case events.EVENT_USER :
-        return `processing event for user ${ o.userName }`;
-    default :
-        throw new TypeError(`unrecognized event type: ${ JSON.stringify(o) }`);
+        case events.EVENT_SERVER :
+            return `processing event on server ${ String(o.serverId) }`;
+        case events.EVENT_USER :
+            return `processing event for user ${ o.userName }`;
+        default :
+            throw new TypeError(`unrecognized event type: ${ JSON.stringify(o) }`);
     }
 };

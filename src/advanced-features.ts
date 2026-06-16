@@ -132,7 +132,7 @@ export const objectDict: objectDictFn = () => {
  * @remarks
  * - `inferred` is correct even without type annotation.
  */
-export const inferred: objectShape | extendedShape = objectDict()[1];
+export const inferred: objectShape | extendedShape | undefined = objectDict()[1];
 
 /**
  * Abstract class implementation
